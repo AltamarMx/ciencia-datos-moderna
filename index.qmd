@@ -1,0 +1,18 @@
+---
+title: "Bases para la ciencia de datos moderna"
+subtitle: "Taller de 8 horas en 4 sesiones (2 h c/u)"
+author: Kevin Alquicira y Guillermo Barrios
+date: today
+lang: es
+keywords: [Python, Miniconda, PowerShell, uv, GitHub, Quarto, Ciencia de Datos, Gráficas interactivas]
+---
+ 
+## Alcance del taller 
+
+1) **Bases para la ciencia de datos moderna**: instalación minimalista y configurable, reproducibilidad, versionado, narrativa.  
+2) **Instalación mínima configurable** y entornos virtuales con **uv**.  
+3) **Espacio de trabajo**: carpeta base, nombres de archivos/variables, **numeración** del flujo.  
+4) **Tipos de archivo y narrativa** del pipeline: `data/001_raw`, `002_intermediate`, `003_processed`; criterio **CSV vs Parquet**.  
+5) **Por qué versionar** y cómo se **combina con uv**.  
+6) **Graficado interactivo** (ejemplos mínimos).  
+7) **Quarto** para documentación y publicación **reproducible**.

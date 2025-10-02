@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bases para la ciencia de datos moderna",
+    "section": "",
+    "text": "Bases para la ciencia de datos moderna: instalación minimalista y configurable, reproducibilidad, versionado, narrativa.\n\nInstalación mínima configurable y entornos virtuales con uv.\n\nEspacio de trabajo: carpeta base, nombres de archivos/variables, numeración del flujo.\n\nTipos de archivo y narrativa del pipeline: data/001_raw, 002_intermediate, 003_processed; criterio CSV vs Parquet.\n\nPor qué versionar y cómo se combina con uv.\n\nGraficado interactivo (ejemplos mínimos).\n\nQuarto para documentación y publicación reproducible."
+  },
+  {
+    "objectID": "index.html#alcance-del-taller",
+    "href": "index.html#alcance-del-taller",
+    "title": "Bases para la ciencia de datos moderna",
+    "section": "",
+    "text": "Bases para la ciencia de datos moderna: instalación minimalista y configurable, reproducibilidad, versionado, narrativa.\n\nInstalación mínima configurable y entornos virtuales con uv.\n\nEspacio de trabajo: carpeta base, nombres de archivos/variables, numeración del flujo.\n\nTipos de archivo y narrativa del pipeline: data/001_raw, 002_intermediate, 003_processed; criterio CSV vs Parquet.\n\nPor qué versionar y cómo se combina con uv.\n\nGraficado interactivo (ejemplos mínimos).\n\nQuarto para documentación y publicación reproducible."
+  }
+]
