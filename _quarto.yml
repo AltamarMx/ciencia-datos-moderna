@@ -1,5 +1,7 @@
 project:
   type: website
+  output-dir: docs
+
 
 website:
   title: "Bases para la ciencia de datos moderna con Python"
