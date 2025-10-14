@@ -1,18 +1,38 @@
 ---
-title: "Bases para la ciencia de datos moderna"
+title: "Bases para la ciencia de datos moderna — Temario"
 subtitle: "Taller de 8 horas en 4 sesiones (2 h c/u)"
-author: Kevin Alquicira y Guillermo Barrios
-date: today
+author:
+  - Kevin Alquicira
+  - Guillermo Barrios
+date: "2  octubre  2025"
 lang: es
-keywords: [Python, Miniconda, PowerShell, uv, GitHub, Quarto, Ciencia de Datos, Gráficas interactivas]
+toc: false
+format: html
 ---
- 
-## Alcance del taller 
 
-1) **Bases para la ciencia de datos moderna**: instalación minimalista y configurable, reproducibilidad, versionado, narrativa.  
-2) **Instalación mínima configurable** y entornos virtuales con **uv**.  
-3) **Espacio de trabajo**: carpeta base, nombres de archivos/variables, **numeración** del flujo.  
-4) **Tipos de archivo y narrativa** del pipeline: `data/001_raw`, `002_intermediate`, `003_processed`; criterio **CSV vs Parquet**.  
-5) **Por qué versionar** y cómo se **combina con uv**.  
-6) **Graficado interactivo** (ejemplos mínimos).  
-7) **Quarto** para documentación y publicación **reproducible**.
+# Presentación
+
+Taller práctico para instalar y organizar un entorno moderno  de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo.
+
+# Requisitos
+
+- Conocimientos básicos de Python  
+- Computadora con privilegios de instalación
+
+# Temario por sesión
+
+## Sesión 1 — uv + Git + Estructura + Narrativa
+**Temas:** uv (entornos, dependencias), Git (init, commits, ramas, .gitignore), estructura base (`data/001_raw→003_processed`, `src/`, `notebooks/`, `reports/`), narrativa computacional (nombres y numeración 001→003).  
+**Actividades:** inicializar repo y entorno con uv, crear árbol de carpetas y README del pipeline, primer commit y rama de trabajo.
+
+## Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly
+**Temas:** Matplotlib (figuras/axes, guardado), Seaborn (relplot/displot/catplot, estilos), Plotly (express/graph_objects, export HTML).  
+**Actividades:** reproducir línea, barras y dispersión en las 3 librerías; guardar salidas en `reports/`; exportar un HTML interactivo.
+
+## Sesión 3 — Marimo + VSCode
+**Temas:** Marimo (create/edit/run, celdas reactivas, parámetros, export HTML), VSCode (extensiones Python/Jupyter, terminal, linters/formatters).  
+**Actividades:** crear una EDA en Marimo con al menos una celda parametrizada; exportar a HTML; ajustar configuración básica de VSCode.
+
+## Sesión 4 — Quarto y tu tesis
+**Temas:** Quarto (book/article, `_quarto.yml`, capítulos), referencias (`.bib`, CSL), cross-referencias (figuras/tablas/ecuaciones).  
+**Actividades:** crear proyecto de tesis y render HTML/PDF; agregar capítulos iniciales y bibliografía; insertar figuras/tablas con referencias internas.

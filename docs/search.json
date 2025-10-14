@@ -2,15 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Bases para la ciencia de datos moderna",
+    "title": "Bases para la ciencia de datos moderna — Temario",
     "section": "",
-    "text": "Bases para la ciencia de datos moderna: instalación minimalista y configurable, reproducibilidad, versionado, narrativa.\n\nInstalación mínima configurable y entornos virtuales con uv.\n\nEspacio de trabajo: carpeta base, nombres de archivos/variables, numeración del flujo.\n\nTipos de archivo y narrativa del pipeline: data/001_raw, 002_intermediate, 003_processed; criterio CSV vs Parquet.\n\nPor qué versionar y cómo se combina con uv.\n\nGraficado interactivo (ejemplos mínimos).\n\nQuarto para documentación y publicación reproducible."
+    "text": "Taller práctico para instalar y organizar un entorno moderno de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo."
   },
   {
-    "objectID": "index.html#alcance-del-taller",
-    "href": "index.html#alcance-del-taller",
-    "title": "Bases para la ciencia de datos moderna",
-    "section": "",
-    "text": "Bases para la ciencia de datos moderna: instalación minimalista y configurable, reproducibilidad, versionado, narrativa.\n\nInstalación mínima configurable y entornos virtuales con uv.\n\nEspacio de trabajo: carpeta base, nombres de archivos/variables, numeración del flujo.\n\nTipos de archivo y narrativa del pipeline: data/001_raw, 002_intermediate, 003_processed; criterio CSV vs Parquet.\n\nPor qué versionar y cómo se combina con uv.\n\nGraficado interactivo (ejemplos mínimos).\n\nQuarto para documentación y publicación reproducible."
+    "objectID": "index.html#sesión-1-uv-git-estructura-narrativa",
+    "href": "index.html#sesión-1-uv-git-estructura-narrativa",
+    "title": "Bases para la ciencia de datos moderna — Temario",
+    "section": "Sesión 1 — uv + Git + Estructura + Narrativa",
+    "text": "Sesión 1 — uv + Git + Estructura + Narrativa\nTemas: uv (entornos, dependencias), Git (init, commits, ramas, .gitignore), estructura base (data/001_raw→003_processed, src/, notebooks/, reports/), narrativa computacional (nombres y numeración 001→003).\nActividades: inicializar repo y entorno con uv, crear árbol de carpetas y README del pipeline, primer commit y rama de trabajo."
+  },
+  {
+    "objectID": "index.html#sesión-2-graficado-con-matplotlib-seaborn-y-plotly",
+    "href": "index.html#sesión-2-graficado-con-matplotlib-seaborn-y-plotly",
+    "title": "Bases para la ciencia de datos moderna — Temario",
+    "section": "Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly",
+    "text": "Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly\nTemas: Matplotlib (figuras/axes, guardado), Seaborn (relplot/displot/catplot, estilos), Plotly (express/graph_objects, export HTML).\nActividades: reproducir línea, barras y dispersión en las 3 librerías; guardar salidas en reports/; exportar un HTML interactivo."
+  },
+  {
+    "objectID": "index.html#sesión-3-marimo-vscode",
+    "href": "index.html#sesión-3-marimo-vscode",
+    "title": "Bases para la ciencia de datos moderna — Temario",
+    "section": "Sesión 3 — Marimo + VSCode",
+    "text": "Sesión 3 — Marimo + VSCode\nTemas: Marimo (create/edit/run, celdas reactivas, parámetros, export HTML), VSCode (extensiones Python/Jupyter, terminal, linters/formatters).\nActividades: crear una EDA en Marimo con al menos una celda parametrizada; exportar a HTML; ajustar configuración básica de VSCode."
+  },
+  {
+    "objectID": "index.html#sesión-4-quarto-y-tu-tesis",
+    "href": "index.html#sesión-4-quarto-y-tu-tesis",
+    "title": "Bases para la ciencia de datos moderna — Temario",
+    "section": "Sesión 4 — Quarto y tu tesis",
+    "text": "Sesión 4 — Quarto y tu tesis\nTemas: Quarto (book/article, _quarto.yml, capítulos), referencias (.bib, CSL), cross-referencias (figuras/tablas/ecuaciones).\nActividades: crear proyecto de tesis y render HTML/PDF; agregar capítulos iniciales y bibliografía; insertar figuras/tablas con referencias internas."
   }
 ]

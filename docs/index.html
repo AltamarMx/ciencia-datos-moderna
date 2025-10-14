@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kevin Alquicira y Guillermo Barrios">
-<meta name="keywords" content="Python, Miniconda, PowerShell, uv, GitHub, Quarto, Ciencia de Datos, Gráficas interactivas">
+<meta name="author" content="Kevin Alquicira">
+<meta name="author" content="Guillermo Barrios">
 
-<title>Bases para la ciencia de datos moderna – Bases para la ciencia de datos moderna con Python</title>
+<title>Bases para la ciencia de datos moderna — Temario – Bases para la ciencia de datos moderna con Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,15 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -57,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
+    "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
     "search-copy-link-title": "Copiar el enlace en la búsqueda",
     "search-hide-matches-text": "Ocultar resultados adicionales",
@@ -75,15 +74,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Bases para la ciencia de datos moderna con Python</span>
     </a>
@@ -109,21 +106,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
-   
-  <ul>
-  <li><a href="#alcance-del-taller" id="toc-alcance-del-taller" class="nav-link active" data-scroll-target="#alcance-del-taller">Alcance del taller</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bases para la ciencia de datos moderna</h1>
+<h1 class="title">Bases para la ciencia de datos moderna — Temario</h1>
 <p class="subtitle lead">Taller de 8 horas en 4 sesiones (2 h c/u)</p>
 </div>
 
@@ -132,9 +121,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-heading">Autores/as</div>
     <div class="quarto-title-meta-contents">
-             <p>Kevin Alquicira y Guillermo Barrios </p>
+             <p>Kevin Alquicira </p>
+             <p>Guillermo Barrios </p>
           </div>
   </div>
     
@@ -149,35 +139,46 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-<div>
-  <div class="keywords">
-    <div class="block-title">Palabras clave</div>
-    <p>Python, Miniconda, PowerShell, uv, GitHub, Quarto, Ciencia de Datos, Gráficas interactivas</p>
-  </div>
-</div>
 
 </header>
 
 
-<section id="alcance-del-taller" class="level2">
-<h2 class="anchored" data-anchor-id="alcance-del-taller">Alcance del taller</h2>
-<ol type="1">
-<li><strong>Bases para la ciencia de datos moderna</strong>: instalación minimalista y configurable, reproducibilidad, versionado, narrativa.<br>
+<section id="presentación" class="level1">
+<h1>Presentación</h1>
+<p>Taller práctico para instalar y organizar un entorno moderno de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo.</p>
+</section>
+<section id="requisitos" class="level1">
+<h1>Requisitos</h1>
+<ul>
+<li>Conocimientos básicos de Python<br>
 </li>
-<li><strong>Instalación mínima configurable</strong> y entornos virtuales con <strong>uv</strong>.<br>
-</li>
-<li><strong>Espacio de trabajo</strong>: carpeta base, nombres de archivos/variables, <strong>numeración</strong> del flujo.<br>
-</li>
-<li><strong>Tipos de archivo y narrativa</strong> del pipeline: <code>data/001_raw</code>, <code>002_intermediate</code>, <code>003_processed</code>; criterio <strong>CSV vs Parquet</strong>.<br>
-</li>
-<li><strong>Por qué versionar</strong> y cómo se <strong>combina con uv</strong>.<br>
-</li>
-<li><strong>Graficado interactivo</strong> (ejemplos mínimos).<br>
-</li>
-<li><strong>Quarto</strong> para documentación y publicación <strong>reproducible</strong>.</li>
-</ol>
+<li>Computadora con privilegios de instalación</li>
+</ul>
+</section>
+<section id="temario-por-sesión" class="level1">
+<h1>Temario por sesión</h1>
+<section id="sesión-1-uv-git-estructura-narrativa" class="level2">
+<h2 class="anchored" data-anchor-id="sesión-1-uv-git-estructura-narrativa">Sesión 1 — uv + Git + Estructura + Narrativa</h2>
+<p><strong>Temas:</strong> uv (entornos, dependencias), Git (init, commits, ramas, .gitignore), estructura base (<code>data/001_raw→003_processed</code>, <code>src/</code>, <code>notebooks/</code>, <code>reports/</code>), narrativa computacional (nombres y numeración 001→003).<br>
+<strong>Actividades:</strong> inicializar repo y entorno con uv, crear árbol de carpetas y README del pipeline, primer commit y rama de trabajo.</p>
+</section>
+<section id="sesión-2-graficado-con-matplotlib-seaborn-y-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="sesión-2-graficado-con-matplotlib-seaborn-y-plotly">Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly</h2>
+<p><strong>Temas:</strong> Matplotlib (figuras/axes, guardado), Seaborn (relplot/displot/catplot, estilos), Plotly (express/graph_objects, export HTML).<br>
+<strong>Actividades:</strong> reproducir línea, barras y dispersión en las 3 librerías; guardar salidas en <code>reports/</code>; exportar un HTML interactivo.</p>
+</section>
+<section id="sesión-3-marimo-vscode" class="level2">
+<h2 class="anchored" data-anchor-id="sesión-3-marimo-vscode">Sesión 3 — Marimo + VSCode</h2>
+<p><strong>Temas:</strong> Marimo (create/edit/run, celdas reactivas, parámetros, export HTML), VSCode (extensiones Python/Jupyter, terminal, linters/formatters).<br>
+<strong>Actividades:</strong> crear una EDA en Marimo con al menos una celda parametrizada; exportar a HTML; ajustar configuración básica de VSCode.</p>
+</section>
+<section id="sesión-4-quarto-y-tu-tesis" class="level2">
+<h2 class="anchored" data-anchor-id="sesión-4-quarto-y-tu-tesis">Sesión 4 — Quarto y tu tesis</h2>
+<p><strong>Temas:</strong> Quarto (book/article, <code>_quarto.yml</code>, capítulos), referencias (<code>.bib</code>, CSL), cross-referencias (figuras/tablas/ecuaciones).<br>
+<strong>Actividades:</strong> crear proyecto de tesis y render HTML/PDF; agregar capítulos iniciales y bibliografía; insertar figuras/tablas con referencias internas.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -232,14 +233,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
