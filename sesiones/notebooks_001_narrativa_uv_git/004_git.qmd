@@ -1,0 +1,261 @@
+
+## ¿Qué es Git?
+
+Git es un **sistema de control de versiones**. Guarda el historial de cambios de tus archivos, permite volver a estados anteriores y colaborar con otras personas sin pisarse el trabajo.
+
+- **Repositorio**: carpeta con tus archivos + una subcarpeta oculta `.git` donde vive el historial.
+- **Commit**: “foto” del estado de tus archivos con un mensaje explicando el cambio.
+- **Remoto**: copia hospedada en un servidor (por ejemplo, GitHub, GitLab).
+
+## ¿Por qué usarlo?
+
+![](./img/meme_tesis.png)
+
+- Evitas nombres, ahora tienes versiones o `commits` 
+- Recuperar versiones anteriores sin perder trabajo.
+- Trabajar en paralelo y **combinar** cambios.
+- Revisar quién cambió qué, cuándo y por qué.
+- Automatizar publicaciones.
+
+::: callout-tip
+#### Pro tip
+Escribe **commits pequeños y con mensajes claros** en modo imperativo:  
+`Añade gráfico de radiación horaria` en lugar de `Añadido gráfico`.
+:::
+
+
+## La importancia de `.gitignore`
+
+`.gitignore` le dice a Git qué **no** debe rastrear (archivos temporales, binarios, datos enormes, credenciales, etc.). Ejemplo útil para Python/Quarto/datos:
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Quarto
+.quarto/
+*_cache/
+*.html
+*.pdf
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Datos grandes
+data/raw/
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.csv # si son muy grandes o no se pueden generar rápido
+
+# Meteo / simulación (ajusta a tu caso)
+*.epw
+*.wea
+*.osm
+*.idf
+*.rad
+*.oct
+````
+
+
+## ¡Cuidado con los archivos grandes!
+
+GitHub **rechaza archivos mayores a 100 MB** en un push normal. Subir binarios grandes rompe el repo o te obliga a reescribir historial. Reglas prácticas:
+
+* Mantén en el repo **sólo código, texto y configs**.
+* Los datos pesados y resultados guárdalos **fuera con .gitignore** o usa **Git LFS** si tu organización lo permite.
+* Añade patrones al `.gitignore` para prevenir accidentes (por ejemplo `*.epw`, `*.zip`, `data/raw/`).
+
+::: callout-warning
+Evita subir archivos >100 MB. Si llegan a entrar, **no intentes** “arreglar a mano”; consulta con ChatGPT cómo reescribir historial.
+:::
+
+## Comandos básicos (sin ramas)
+
+> Flujo mínimo: inicializar → revisar → añadir → confirmar → conectar remoto → empujar.
+
+```bash
+# 0) Configuración inicial (una sola vez en tu máquina)
+git config --global user.name  "Tu Nombre"
+git config --global user.email "tu@correo"
+
+# 1) Crear repositorio dentro de una carpeta existente
+git init
+
+# 2) Ver estado de cambios
+git status
+
+# 3) Ver diferencias (antes de añadir / confirmar)
+git diff                   # contra el último commit
+git diff --staged          # lo que ya está en "staging"
+
+# 4) Añadir archivos al "staging area"
+git add .                  # todo (mejor ser selectivo)
+git add src/app.py         # archivo específico
+git add .gitignore
+
+# 5) Confirmar con mensaje
+git commit -m "Inicializa proyecto: estructura, .gitignore y README"
+
+# 6) Historial compacto
+git log --oneline --graph --decorate --all
+
+# 7) Deshacer staging o cambios del working directory
+git restore --staged src/app.py  # saca del staging
+git restore src/app.py           # descarta cambios locales en el archivo
+
+# 8) Dejar de rastrear un archivo que ya subiste por error
+git rm --cached ruta/al/archivo-grande.zip
+git commit -m "Deja de rastrear archivo grande"
+
+# 9) Conectar con un remoto (p.ej., GitHub) y publicar
+git remote add origin https://github.com/usuario/proyecto.git
+git push -u origin main          # primera vez (crea el upstream)
+# Siguientes veces:
+git push                         # empuja cambios
+git pull                         # trae cambios del remoto
+```
+
+::: callout-note
+En repos nuevos, la rama inicial se llama **`main`** por defecto. Aquí aún no “trabajamos con ramas”, sólo empujamos nuestro historial a `main`.
+:::
+
+## Checklist antes de `git commit`
+
+* [ ] `.gitignore` cubre temporales, binarios y datos pesados.
+* [ ] El commit es **atómico** (un cambio lógico por commit).
+* [ ] Mensaje claro en modo imperativo.
+* [ ] No hay archivos >100 MB.
+
+---
+
+# Ramas y flujo de trabajo para proponer *features* en equipos grandes
+
+## ¿Qué es una rama?
+
+Una **rama** es una línea de trabajo paralela al historial principal (`main`). Permite desarrollar una idea (feature, fix, experimento) sin afectar lo estable. Luego, se integra mediante **Pull Request (PR)**.
+
+## Convenciones útiles
+
+* Nombres de ramas: `feat/nombre-corto`, `fix/bug-descripcion`, `docs/…`, `refactor/…`.
+* Mensajes de commit tipo **Conventional Commits**:
+  `feat: agrega cálculo de DH_calido`; `fix: corrige ruta de EPW`.
+
+## Flujo recomendado para proponer una feature
+
+### A) Si **tienes permisos** de escritura en el repo
+
+```bash
+# 1) Asegúrate de estar sincronizado con main
+git checkout main
+git pull origin main
+
+# 2) Crea una rama de trabajo
+git checkout -b feat/panel-diagnostico
+
+# 3) Trabaja y confirma cambios en pequeños commits
+git add src/panel.py
+git commit -m "feat: panel básico con métricas"
+
+# 4) Mantén tu rama al día (evita conflictos al final)
+git fetch origin
+git rebase origin/main   # o: git merge origin/main
+
+# 5) Publica tu rama en el remoto
+git push -u origin feat/panel-diagnostico
+```
+
+Ahora abre un **Pull Request** hacia `main` en la plataforma (GitHub/GitLab):
+
+1. Describe el **qué y por qué** del cambio.
+2. Adjunta capturas, benchmarks o enlaces a issues.
+3. Pide revisión a personas responsables.
+4. Atiende comentarios y **empuja** más commits a la misma rama.
+
+Cuando el PR está aprobado y las pruebas (CI) pasan, se integra. Método sugerido:
+
+* **Squash & Merge**: junta todos tus commits en uno solo y mantiene el historial limpio.
+
+Limpieza tras el merge:
+
+```bash
+# borrar rama remota y local
+git push origin --delete feat/panel-diagnostico
+git checkout main
+git pull origin main
+git branch -d feat/panel-diagnostico
+```
+
+### B) Si **no tienes permisos** (flujo de *fork*)
+
+1. Haz un **fork** del repo.
+2. Clona **tu fork**:
+
+   ```bash
+   git clone https://github.com/tu-usuario/proyecto.git
+   cd proyecto
+   ```
+3. Agrega el remoto original para sincronizarte:
+
+   ```bash
+   git remote add upstream https://github.com/org/proyecto.git
+   git fetch upstream
+   git checkout main
+   git merge upstream/main   # o: git rebase upstream/main
+   ```
+4. Crea tu rama y trabaja:
+
+   ```bash
+   git checkout -b feat/panel-diagnostico
+   # ... commits ...
+   git push -u origin feat/panel-diagnostico
+   ```
+5. Abre el **PR desde tu fork** `origin/feat/...` hacia `org/proyecto:main`.
+
+::: callout-important
+
+#### Reglas de convivencia
+
+* No subas datos pesados ni secretos (usa `.gitignore` y variables de entorno).
+* Sigue las guías de estilo del repo (linters, formateo, tests).
+* Un PR debe ser **pequeño y revisable**. Si crece, divídelo.
+* Mantén tu rama actualizada con `main` con frecuencia para minimizar conflictos.
+
+:::
+
+## Comandos de apoyo en ramas
+
+```bash
+# Crear y cambiar a una rama nueva
+git checkout -b feat/nueva-funcion
+
+# Ver ramas
+git branch                # locales
+git branch -r             # remotas
+git branch -a             # todas
+
+# Cambiar de rama
+git checkout main
+
+# Traer cambios de main a tu rama (elige uno)
+git merge origin/main
+# o bien, reescribir tu rama encima de main (historial más lineal)
+git rebase origin/main
+
+# Resolver conflictos: edita archivos marcados y luego
+git add <archivo_resuelto>
+git rebase --continue     # si estabas en rebase
+# o git commit             # si estabas en merge
+
+# Publicar la rama de trabajo
+git push -u origin feat/nueva-funcion
+```
