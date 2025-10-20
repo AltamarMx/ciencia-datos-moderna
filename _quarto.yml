@@ -1,22 +1,45 @@
+lang: es 
+notebook-links: global
+
 project:
-  type: website
-  output-dir: docs
+  type: book  
+  output-dir: docs  
+  
 
-
-website:
-  title: "Bases para la ciencia de datos moderna con Python"
+  
+book:
+  title: "Bases para la ciencia de datos moderna"
+  # language: es
+  # author: Guillermo Barrios
+  # version: 0.9.1
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
+    search: True
+  sidebar:
+    menu: True
+    collapse-level: 1
+    border: true
+    # logo: img/python.png
+    right: Construido con [Quarto](https://quarto.org/).
+    background: "#f8f9fa"
+  # repo-url: https://github.com/altamarmx/python-2026-1/
+  chapters:
+    - index.qmd 
+    - sesiones/notebooks_001_narrativa_uv_git/001_narrativa.qmd
+    - sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.qmd
+    - sesiones/notebooks_001_narrativa_uv_git/003_uv.qmd
+    - sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.ipynb
+    - sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.ipynb
+    - sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.ipynb
+    - sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.ipynb
+    
 
 format:
-  html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
-
+  html: 
+    theme: 
+      light: spacelab
+      dark: slate
+    code-link: true    
+    number-sections: true
+    number-depth: 1
 
 

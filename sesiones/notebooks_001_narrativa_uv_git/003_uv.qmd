@@ -1,0 +1,14 @@
+
+# ¿Por qué entornos virtuales?
+
+- **Aislamiento de dependencias:** cada proyecto instala sus paquetes sin afectar al sistema ni a otros proyectos.  
+- **Reproducibilidad:** puedes reconstruir el ambiente con una lista bloqueada de versiones.  
+- **Evitar “entornos del sistema”:** reduces errores por Python administrado por el SO o por permisos.  
+- **Descartables y locales:** se eliminan y recrean rápido; por convención se llaman `.venv/` en la raíz del proyecto.
+
+# Recomendaciones de un espacio de trabajo
+
+- Crea **un entorno virtual por proyecto** para aislar dependencias y evitar conflictos.
+- Usa `uv init espacio-de-trabajo`  para crear un espacio-de-trabajo 
+- O entra a espacio-de-trabajo y  `uv init `  para inicializar un espacio de trabajo 
+

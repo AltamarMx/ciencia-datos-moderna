@@ -1,0 +1,93 @@
+# Paradigma de ciencia moderna
+
+
+# Espacio de trabajo
+ 
+ El espacio de trabajo es un folder con una estructura, por ejemplo:
+
+```
+ analisis-temixco/
+├── data/
+├── notebooks/
+│   └── tools/        # utilidades y paquetes locales
+└── reportes/
+```
+
+
+
+
+Peeero, se puede ir mucho más allá:
+```
+analisis-temixco/
+├── data/
+│   ├── 001_raw/
+│   ├── 002_intermediate/
+│   └── 003_processed/
+├── notebooks/
+│   ├── 001_ETL.ipynb
+│   ├── 002_EDA.ipynb
+│   ├── 003_CasoA.ipynb
+│   └── tools/
+│       ├── __init__.py
+│       ├── importa.py
+│       ├── calculos.py
+│       └── grafica.py
+├── docs/
+├── reportes/
+│   └── index.qmd
+└── README.md
+```
+
+
+
+# Narrativa computacional en las libretas
+
+## Guía breve de nombres (Python / proyectos de datos)
+
+* **Estilo único:** en Python usa **snake_case** para variables y funciones (`temp_exterior`) y **UPPER_SNAKE_CASE** para constantes (`RHO_AIRE`).
+* **Evita `df`:** nombra por contenido y nivel de proceso. Ej.:
+  `meteo_raw`, `meteo_limpia`, `consumos_mensuales`, `ti_dormitorio3`, `temp_ambiente`, `temperaturas_horarias`.
+* **Nombres alusivos y claros:** que digan *qué* son y, si aplica, *unidades* o *periodo*.
+  Sufijos útiles: `_kwh`, `_c`, `_m2`, `_porc`, `_horario`, `_diario`, `_mensual`.
+* **ASCII solo:** sin acentos, eñes ni símbolos raros. Usa `anio`, `nino`, `temperatura`, no `año`, `niño`, `temperatura°`.
+* **Coherencia semántica:** usa el mismo término siempre (`temp` o `temperatura`, no ambos).
+* **Funciones = verbo + objeto:** `calcula_confort()`, `carga_meteo()`, `genera_reporte()`.
+* **Columnas/keys:** snake_case y sin espacios: `fecha_local`, `ghi`, `rh`, `vel_aire_ms`.
+* **Evita abreviaturas crípticas:** solo acrónimos estándar del dominio (GHI, DNI, RH). Si dudas, escribe completo.
+* **Longitud razonable:** mejor claro que corto, pero evita “testamento” (`energia_util_kwh` > `eu` y también > `energia_util_total_promedio_kwh_2024`).
+
+## Buenos vs malos (rápido)
+
+**Bien**
+
+```python
+meteo_raw = lee_epw("temixco.epw")
+meteo_limpia = depura_meteo(meteo_raw)
+temps_diarias_c = meteo_limpia[["fecha", "tdb"]].resample("D").mean()
+RHO_AIRE = 1.225
+```
+
+**Mal**
+
+```python
+df = lee_epw("temixco.epw")
+DataLimpia = depura_meteo(df)
+tªDiarias = DataLimpia.resample("D").mean()
+RhoAire = 1.225
+```
+
+## Patrones útiles para tu flujo
+
+* **Nivel de proceso:** `meteo_raw` → `meteo_intermediate` → `meteo_processed`
+* **Caso de estudio:** `caso_a_parametros`, `caso_a_resultados`
+* **Unidades al final:** `energia_kwh`, `temp_c`, `vel_viento_ms`
+* **Tiempo en el nombre si aplica:** `consumo_2024_mensual`, `ocupacion_horaria`
+
+Si más adelante necesitas reglas para renombrar columnas automáticamente a `snake_case` desde fuentes externas, te paso un snippet corto para normalizarlas.
+
+Mostrar repo como ejemplo https://github.com/AltamarMx/EPW_EdificioBioclimatico
+
+![](img/001_epw_repo.png)
+
+![](img/002_epw_notebooks.png)
+

@@ -1,0 +1,57 @@
+# Miniconda 
+
+
+Miniconda es un **instalador mínimo** de la distribución Anaconda: incluye solo **conda**, **Python** y lo esencial. A partir de ahí tú instalas únicamente los paquetes que necesitas. 
+
+## ¿Por qué usarla?
+- **Ligera y controlada:** instalación pequeña; evitas bajar cientos de paquetes que no usarás.
+- **Entornos aislados:** con **conda** o **uv** creas entornos por proyecto para evitar conflictos de versiones y asegurar reproducibilidad. 
+- **Multiplataforma y sencilla de instalar:** instaladores oficiales para Windows, macOS y Linux. 
+
+
+
+# La terminal
+
+## 1) Abrir la consola correcta
+
+Abre **Miniconda PowerShell Prompt** desde el menú Inicio. Verifica que existe python.
+
+
+## 2) ¿Qué es el HOME y cómo ubicarlo?
+
+Tu **HOME** es tu carpeta personal (p. ej., `C:\Users\TuUsuario`). 
+
+
+## 3) Moverte entre carpetas (navegación básica)
+
+```powershell
+# Ver carpeta actual (alias de Get-Location)
+pwd
+
+# Listar contenido (alias de Get-ChildItem)
+ls
+dir
+
+# Entrar a una subcarpeta
+cd nombre_de_carpeta
+
+# Subir un nivel
+cd ..
+
+# Ir a una ruta con espacios (usa comillas)
+cd "C:\Program Files\SomeApp"
+```
+
+> Nota: En PowerShell, `cd` es alias de `change directory`, `ls/dir` son alias de `Get-ChildItem`, y `pwd` es `Get-Location`.
+
+## 4) Abrir el Explorador de archivos desde la carpeta actual
+
+```powershell
+# Abre el Explorador en el directorio actual
+ii .
+# También puedes abrir un archivo o carpeta específica
+ii .\reportes\index.qmd
+```
+
+> `ii` es alias de `Invoke-Item` y ejecuta la acción por defecto (abrir carpeta/archivo con su app asociada).
+

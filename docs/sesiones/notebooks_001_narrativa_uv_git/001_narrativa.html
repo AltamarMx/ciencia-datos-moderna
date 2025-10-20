@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kevin Alquicira">
-<meta name="author" content="Guillermo Barrios">
 
-<title>Bases para la ciencia de datos moderna</title>
+<title>2&nbsp; Paradigma de ciencia moderna – Bases para la ciencia de datos moderna</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,31 +20,67 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-863ab20449d2f3d5951a2e693f5499b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html" rel="next">
+<link href="../../index.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-863ab20449d2f3d5951a2e693f5499b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -247,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Bases para la ciencia de datos moderna</span>
     </a>
   </div>
@@ -262,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bases para la ciencia de datos moderna — Temario</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Paradigma de ciencia moderna</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -276,49 +310,49 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bases para la ciencia de datos moderna — Temario</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Paradigma de ciencia moderna</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Miniconda</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sesiones/notebooks_001_narrativa_uv_git/003_uv.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_001_narrativa_uv_git/003_uv.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">¿Por qué entornos virtuales?</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Datos de una estación meteorológica</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tips</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">https://seaborn.pydata.org/</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">003_plotly.html</span></span></a>
   </div>
 </li>
@@ -327,35 +361,35 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#espacio-de-trabajo" id="toc-espacio-de-trabajo" class="nav-link active" data-scroll-target="#espacio-de-trabajo"><span class="header-section-number">3</span> Espacio de trabajo</a></li>
+  <li><a href="#narrativa-computacional-en-las-libretas" id="toc-narrativa-computacional-en-las-libretas" class="nav-link" data-scroll-target="#narrativa-computacional-en-las-libretas"><span class="header-section-number">4</span> Narrativa computacional en las libretas</a>
+  <ul class="collapse">
+  <li><a href="#guía-breve-de-nombres-python-proyectos-de-datos" id="toc-guía-breve-de-nombres-python-proyectos-de-datos" class="nav-link" data-scroll-target="#guía-breve-de-nombres-python-proyectos-de-datos">Guía breve de nombres (Python / proyectos de datos)</a></li>
+  <li><a href="#buenos-vs-malos-rápido" id="toc-buenos-vs-malos-rápido" class="nav-link" data-scroll-target="#buenos-vs-malos-rápido">Buenos vs malos (rápido)</a></li>
+  <li><a href="#patrones-útiles-para-tu-flujo" id="toc-patrones-útiles-para-tu-flujo" class="nav-link" data-scroll-target="#patrones-útiles-para-tu-flujo">Patrones útiles para tu flujo</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bases para la ciencia de datos moderna</h1>
-<p class="subtitle lead">Taller de 8 horas en 4 sesiones (2 h c/u)</p>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Paradigma de ciencia moderna</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autores/as</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kevin Alquicira </p>
-             <p>Guillermo Barrios </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Fecha de publicación</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2 de octubre de 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -365,39 +399,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="presentación" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Presentación</h1>
-<p>Taller práctico para instalar y organizar un entorno moderno de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo.</p>
+<section id="espacio-de-trabajo" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Espacio de trabajo</h1>
+<p>El espacio de trabajo es un folder con una estructura, por ejemplo:</p>
+<pre><code> analisis-temixco/
+├── data/
+├── notebooks/
+│   └── tools/        # utilidades y paquetes locales
+└── reportes/</code></pre>
+<p>Peeero, se puede ir mucho más allá:</p>
+<pre><code>analisis-temixco/
+├── data/
+│   ├── 001_raw/
+│   ├── 002_intermediate/
+│   └── 003_processed/
+├── notebooks/
+│   ├── 001_ETL.ipynb
+│   ├── 002_EDA.ipynb
+│   ├── 003_CasoA.ipynb
+│   └── tools/
+│       ├── __init__.py
+│       ├── importa.py
+│       ├── calculos.py
+│       └── grafica.py
+├── docs/
+├── reportes/
+│   └── index.qmd
+└── README.md</code></pre>
 </section>
-<section id="requisitos" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Requisitos</h1>
+<section id="narrativa-computacional-en-las-libretas" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Narrativa computacional en las libretas</h1>
+<section id="guía-breve-de-nombres-python-proyectos-de-datos" class="level2">
+<h2 class="anchored" data-anchor-id="guía-breve-de-nombres-python-proyectos-de-datos">Guía breve de nombres (Python / proyectos de datos)</h2>
 <ul>
-<li>Conocimientos básicos de Python<br>
-</li>
-<li>Computadora con privilegios de instalación</li>
+<li><strong>Estilo único:</strong> en Python usa <strong>snake_case</strong> para variables y funciones (<code>temp_exterior</code>) y <strong>UPPER_SNAKE_CASE</strong> para constantes (<code>RHO_AIRE</code>).</li>
+<li><strong>Evita <code>df</code>:</strong> nombra por contenido y nivel de proceso. Ej.: <code>meteo_raw</code>, <code>meteo_limpia</code>, <code>consumos_mensuales</code>, <code>ti_dormitorio3</code>, <code>temp_ambiente</code>, <code>temperaturas_horarias</code>.</li>
+<li><strong>Nombres alusivos y claros:</strong> que digan <em>qué</em> son y, si aplica, <em>unidades</em> o <em>periodo</em>. Sufijos útiles: <code>_kwh</code>, <code>_c</code>, <code>_m2</code>, <code>_porc</code>, <code>_horario</code>, <code>_diario</code>, <code>_mensual</code>.</li>
+<li><strong>ASCII solo:</strong> sin acentos, eñes ni símbolos raros. Usa <code>anio</code>, <code>nino</code>, <code>temperatura</code>, no <code>año</code>, <code>niño</code>, <code>temperatura°</code>.</li>
+<li><strong>Coherencia semántica:</strong> usa el mismo término siempre (<code>temp</code> o <code>temperatura</code>, no ambos).</li>
+<li><strong>Funciones = verbo + objeto:</strong> <code>calcula_confort()</code>, <code>carga_meteo()</code>, <code>genera_reporte()</code>.</li>
+<li><strong>Columnas/keys:</strong> snake_case y sin espacios: <code>fecha_local</code>, <code>ghi</code>, <code>rh</code>, <code>vel_aire_ms</code>.</li>
+<li><strong>Evita abreviaturas crípticas:</strong> solo acrónimos estándar del dominio (GHI, DNI, RH). Si dudas, escribe completo.</li>
+<li><strong>Longitud razonable:</strong> mejor claro que corto, pero evita “testamento” (<code>energia_util_kwh</code> &gt; <code>eu</code> y también &gt; <code>energia_util_total_promedio_kwh_2024</code>).</li>
 </ul>
 </section>
-<section id="temario-por-sesión" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Temario por sesión</h1>
-<section id="sesión-1-uv-git-estructura-narrativa" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-1-uv-git-estructura-narrativa">Sesión 1 — uv + Git + Estructura + Narrativa</h2>
-<p><strong>Temas:</strong> uv (entornos, dependencias), Git (init, commits, ramas, .gitignore), estructura base (<code>data/001_raw→003_processed</code>, <code>src/</code>, <code>notebooks/</code>, <code>reports/</code>), narrativa computacional (nombres y numeración 001→003).<br>
-<strong>Actividades:</strong> inicializar repo y entorno con uv, crear árbol de carpetas y README del pipeline, primer commit y rama de trabajo.</p>
+<section id="buenos-vs-malos-rápido" class="level2">
+<h2 class="anchored" data-anchor-id="buenos-vs-malos-rápido">Buenos vs malos (rápido)</h2>
+<p><strong>Bien</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>meteo_raw <span class="op">=</span> lee_epw(<span class="st">"temixco.epw"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>meteo_limpia <span class="op">=</span> depura_meteo(meteo_raw)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>temps_diarias_c <span class="op">=</span> meteo_limpia[[<span class="st">"fecha"</span>, <span class="st">"tdb"</span>]].resample(<span class="st">"D"</span>).mean()</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>RHO_AIRE <span class="op">=</span> <span class="fl">1.225</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Mal</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> lee_epw(<span class="st">"temixco.epw"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>DataLimpia <span class="op">=</span> depura_meteo(df)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>tªDiarias <span class="op">=</span> DataLimpia.resample(<span class="st">"D"</span>).mean()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>RhoAire <span class="op">=</span> <span class="fl">1.225</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="sesión-2-graficado-con-matplotlib-seaborn-y-plotly" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-2-graficado-con-matplotlib-seaborn-y-plotly">Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly</h2>
-<p><strong>Temas:</strong> Matplotlib (figuras/axes, guardado), Seaborn (relplot/displot/catplot, estilos), Plotly (express/graph_objects, export HTML).<br>
-<strong>Actividades:</strong> reproducir línea, barras y dispersión en las 3 librerías; guardar salidas en <code>reports/</code>; exportar un HTML interactivo.</p>
-</section>
-<section id="sesión-3-marimo-vscode" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-3-marimo-vscode">Sesión 3 — Marimo + VSCode</h2>
-<p><strong>Temas:</strong> Marimo (create/edit/run, celdas reactivas, parámetros, export HTML), VSCode (extensiones Python/Jupyter, terminal, linters/formatters).<br>
-<strong>Actividades:</strong> crear una EDA en Marimo con al menos una celda parametrizada; exportar a HTML; ajustar configuración básica de VSCode.</p>
-</section>
-<section id="sesión-4-quarto-y-tu-tesis" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-4-quarto-y-tu-tesis">Sesión 4 — Quarto y tu tesis</h2>
-<p><strong>Temas:</strong> Quarto (book/article, <code>_quarto.yml</code>, capítulos), referencias (<code>.bib</code>, CSL), cross-referencias (figuras/tablas/ecuaciones).<br>
-<strong>Actividades:</strong> crear proyecto de tesis y render HTML/PDF; agregar capítulos iniciales y bibliografía; insertar figuras/tablas con referencias internas.</p>
+<section id="patrones-útiles-para-tu-flujo" class="level2">
+<h2 class="anchored" data-anchor-id="patrones-útiles-para-tu-flujo">Patrones útiles para tu flujo</h2>
+<ul>
+<li><strong>Nivel de proceso:</strong> <code>meteo_raw</code> → <code>meteo_intermediate</code> → <code>meteo_processed</code></li>
+<li><strong>Caso de estudio:</strong> <code>caso_a_parametros</code>, <code>caso_a_resultados</code></li>
+<li><strong>Unidades al final:</strong> <code>energia_kwh</code>, <code>temp_c</code>, <code>vel_viento_ms</code></li>
+<li><strong>Tiempo en el nombre si aplica:</strong> <code>consumo_2024_mensual</code>, <code>ocupacion_horaria</code></li>
+</ul>
+<p>Si más adelante necesitas reglas para renombrar columnas automáticamente a <code>snake_case</code> desde fuentes externas, te paso un snippet corto para normalizarlas.</p>
+<p>Mostrar repo como ejemplo https://github.com/AltamarMx/EPW_EdificioBioclimatico</p>
+<p><img src="img/001_epw_repo.png" class="img-fluid"></p>
+<p><img src="img/002_epw_notebooks.png" class="img-fluid"></p>
 
 
 </section>
@@ -818,10 +888,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../index.html" class="pagination-link" aria-label="Bases para la ciencia de datos moderna — Temario">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bases para la ciencia de datos moderna — Temario</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html" class="pagination-link" aria-label="Paradigma de ciencia moderna">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Paradigma de ciencia moderna</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html" class="pagination-link" aria-label="Miniconda">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Miniconda</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -2,36 +2,221 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Bases para la ciencia de datos moderna — Temario",
+    "title": "Bases para la ciencia de datos moderna",
     "section": "",
-    "text": "Taller práctico para instalar y organizar un entorno moderno de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo."
+    "text": "1 Presentación\nTaller práctico para instalar y organizar un entorno moderno de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bases para la ciencia de datos moderna — Temario</span>"
+    ]
   },
   {
     "objectID": "index.html#sesión-1-uv-git-estructura-narrativa",
     "href": "index.html#sesión-1-uv-git-estructura-narrativa",
-    "title": "Bases para la ciencia de datos moderna — Temario",
+    "title": "Bases para la ciencia de datos moderna",
     "section": "Sesión 1 — uv + Git + Estructura + Narrativa",
-    "text": "Sesión 1 — uv + Git + Estructura + Narrativa\nTemas: uv (entornos, dependencias), Git (init, commits, ramas, .gitignore), estructura base (data/001_raw→003_processed, src/, notebooks/, reports/), narrativa computacional (nombres y numeración 001→003).\nActividades: inicializar repo y entorno con uv, crear árbol de carpetas y README del pipeline, primer commit y rama de trabajo."
+    "text": "Sesión 1 — uv + Git + Estructura + Narrativa\nTemas: uv (entornos, dependencias), Git (init, commits, ramas, .gitignore), estructura base (data/001_raw→003_processed, src/, notebooks/, reports/), narrativa computacional (nombres y numeración 001→003).\nActividades: inicializar repo y entorno con uv, crear árbol de carpetas y README del pipeline, primer commit y rama de trabajo.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bases para la ciencia de datos moderna — Temario</span>"
+    ]
   },
   {
     "objectID": "index.html#sesión-2-graficado-con-matplotlib-seaborn-y-plotly",
     "href": "index.html#sesión-2-graficado-con-matplotlib-seaborn-y-plotly",
-    "title": "Bases para la ciencia de datos moderna — Temario",
+    "title": "Bases para la ciencia de datos moderna",
     "section": "Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly",
-    "text": "Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly\nTemas: Matplotlib (figuras/axes, guardado), Seaborn (relplot/displot/catplot, estilos), Plotly (express/graph_objects, export HTML).\nActividades: reproducir línea, barras y dispersión en las 3 librerías; guardar salidas en reports/; exportar un HTML interactivo."
+    "text": "Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly\nTemas: Matplotlib (figuras/axes, guardado), Seaborn (relplot/displot/catplot, estilos), Plotly (express/graph_objects, export HTML).\nActividades: reproducir línea, barras y dispersión en las 3 librerías; guardar salidas en reports/; exportar un HTML interactivo.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bases para la ciencia de datos moderna — Temario</span>"
+    ]
   },
   {
     "objectID": "index.html#sesión-3-marimo-vscode",
     "href": "index.html#sesión-3-marimo-vscode",
-    "title": "Bases para la ciencia de datos moderna — Temario",
+    "title": "Bases para la ciencia de datos moderna",
     "section": "Sesión 3 — Marimo + VSCode",
-    "text": "Sesión 3 — Marimo + VSCode\nTemas: Marimo (create/edit/run, celdas reactivas, parámetros, export HTML), VSCode (extensiones Python/Jupyter, terminal, linters/formatters).\nActividades: crear una EDA en Marimo con al menos una celda parametrizada; exportar a HTML; ajustar configuración básica de VSCode."
+    "text": "Sesión 3 — Marimo + VSCode\nTemas: Marimo (create/edit/run, celdas reactivas, parámetros, export HTML), VSCode (extensiones Python/Jupyter, terminal, linters/formatters).\nActividades: crear una EDA en Marimo con al menos una celda parametrizada; exportar a HTML; ajustar configuración básica de VSCode.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bases para la ciencia de datos moderna — Temario</span>"
+    ]
   },
   {
     "objectID": "index.html#sesión-4-quarto-y-tu-tesis",
     "href": "index.html#sesión-4-quarto-y-tu-tesis",
-    "title": "Bases para la ciencia de datos moderna — Temario",
+    "title": "Bases para la ciencia de datos moderna",
     "section": "Sesión 4 — Quarto y tu tesis",
-    "text": "Sesión 4 — Quarto y tu tesis\nTemas: Quarto (book/article, _quarto.yml, capítulos), referencias (.bib, CSL), cross-referencias (figuras/tablas/ecuaciones).\nActividades: crear proyecto de tesis y render HTML/PDF; agregar capítulos iniciales y bibliografía; insertar figuras/tablas con referencias internas."
+    "text": "Sesión 4 — Quarto y tu tesis\nTemas: Quarto (book/article, _quarto.yml, capítulos), referencias (.bib, CSL), cross-referencias (figuras/tablas/ecuaciones).\nActividades: crear proyecto de tesis y render HTML/PDF; agregar capítulos iniciales y bibliografía; insertar figuras/tablas con referencias internas.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bases para la ciencia de datos moderna — Temario</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html",
+    "title": "2  Paradigma de ciencia moderna",
+    "section": "",
+    "text": "3 Espacio de trabajo\nEl espacio de trabajo es un folder con una estructura, por ejemplo:\nPeeero, se puede ir mucho más allá:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paradigma de ciencia moderna</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html#guía-breve-de-nombres-python-proyectos-de-datos",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html#guía-breve-de-nombres-python-proyectos-de-datos",
+    "title": "2  Paradigma de ciencia moderna",
+    "section": "Guía breve de nombres (Python / proyectos de datos)",
+    "text": "Guía breve de nombres (Python / proyectos de datos)\n\nEstilo único: en Python usa snake_case para variables y funciones (temp_exterior) y UPPER_SNAKE_CASE para constantes (RHO_AIRE).\nEvita df: nombra por contenido y nivel de proceso. Ej.: meteo_raw, meteo_limpia, consumos_mensuales, ti_dormitorio3, temp_ambiente, temperaturas_horarias.\nNombres alusivos y claros: que digan qué son y, si aplica, unidades o periodo. Sufijos útiles: _kwh, _c, _m2, _porc, _horario, _diario, _mensual.\nASCII solo: sin acentos, eñes ni símbolos raros. Usa anio, nino, temperatura, no año, niño, temperatura°.\nCoherencia semántica: usa el mismo término siempre (temp o temperatura, no ambos).\nFunciones = verbo + objeto: calcula_confort(), carga_meteo(), genera_reporte().\nColumnas/keys: snake_case y sin espacios: fecha_local, ghi, rh, vel_aire_ms.\nEvita abreviaturas crípticas: solo acrónimos estándar del dominio (GHI, DNI, RH). Si dudas, escribe completo.\nLongitud razonable: mejor claro que corto, pero evita “testamento” (energia_util_kwh &gt; eu y también &gt; energia_util_total_promedio_kwh_2024).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paradigma de ciencia moderna</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html#buenos-vs-malos-rápido",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html#buenos-vs-malos-rápido",
+    "title": "2  Paradigma de ciencia moderna",
+    "section": "Buenos vs malos (rápido)",
+    "text": "Buenos vs malos (rápido)\nBien\nmeteo_raw = lee_epw(\"temixco.epw\")\nmeteo_limpia = depura_meteo(meteo_raw)\ntemps_diarias_c = meteo_limpia[[\"fecha\", \"tdb\"]].resample(\"D\").mean()\nRHO_AIRE = 1.225\nMal\ndf = lee_epw(\"temixco.epw\")\nDataLimpia = depura_meteo(df)\ntªDiarias = DataLimpia.resample(\"D\").mean()\nRhoAire = 1.225",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paradigma de ciencia moderna</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html#patrones-útiles-para-tu-flujo",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/001_narrativa.html#patrones-útiles-para-tu-flujo",
+    "title": "2  Paradigma de ciencia moderna",
+    "section": "Patrones útiles para tu flujo",
+    "text": "Patrones útiles para tu flujo\n\nNivel de proceso: meteo_raw → meteo_intermediate → meteo_processed\nCaso de estudio: caso_a_parametros, caso_a_resultados\nUnidades al final: energia_kwh, temp_c, vel_viento_ms\nTiempo en el nombre si aplica: consumo_2024_mensual, ocupacion_horaria\n\nSi más adelante necesitas reglas para renombrar columnas automáticamente a snake_case desde fuentes externas, te paso un snippet corto para normalizarlas.\nMostrar repo como ejemplo https://github.com/AltamarMx/EPW_EdificioBioclimatico",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paradigma de ciencia moderna</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html",
+    "title": "3  Miniconda",
+    "section": "",
+    "text": "¿Por qué usarla?\nMiniconda es un instalador mínimo de la distribución Anaconda: incluye solo conda, Python y lo esencial. A partir de ahí tú instalas únicamente los paquetes que necesitas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Miniconda</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#por-qué-usarla",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#por-qué-usarla",
+    "title": "3  Miniconda",
+    "section": "",
+    "text": "Ligera y controlada: instalación pequeña; evitas bajar cientos de paquetes que no usarás.\nEntornos aislados: con conda o uv creas entornos por proyecto para evitar conflictos de versiones y asegurar reproducibilidad.\nMultiplataforma y sencilla de instalar: instaladores oficiales para Windows, macOS y Linux.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Miniconda</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#abrir-la-consola-correcta",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#abrir-la-consola-correcta",
+    "title": "3  Miniconda",
+    "section": "1) Abrir la consola correcta",
+    "text": "1) Abrir la consola correcta\nAbre Miniconda PowerShell Prompt desde el menú Inicio. Verifica que existe python.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Miniconda</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#qué-es-el-home-y-cómo-ubicarlo",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#qué-es-el-home-y-cómo-ubicarlo",
+    "title": "3  Miniconda",
+    "section": "2) ¿Qué es el HOME y cómo ubicarlo?",
+    "text": "2) ¿Qué es el HOME y cómo ubicarlo?\nTu HOME es tu carpeta personal (p. ej., C:\\Users\\TuUsuario).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Miniconda</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#moverte-entre-carpetas-navegación-básica",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#moverte-entre-carpetas-navegación-básica",
+    "title": "3  Miniconda",
+    "section": "3) Moverte entre carpetas (navegación básica)",
+    "text": "3) Moverte entre carpetas (navegación básica)\n# Ver carpeta actual (alias de Get-Location)\npwd\n\n# Listar contenido (alias de Get-ChildItem)\nls\ndir\n\n# Entrar a una subcarpeta\ncd nombre_de_carpeta\n\n# Subir un nivel\ncd ..\n\n# Ir a una ruta con espacios (usa comillas)\ncd \"C:\\Program Files\\SomeApp\"\n\nNota: En PowerShell, cd es alias de change directory, ls/dir son alias de Get-ChildItem, y pwd es Get-Location.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Miniconda</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#abrir-el-explorador-de-archivos-desde-la-carpeta-actual",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.html#abrir-el-explorador-de-archivos-desde-la-carpeta-actual",
+    "title": "3  Miniconda",
+    "section": "4) Abrir el Explorador de archivos desde la carpeta actual",
+    "text": "4) Abrir el Explorador de archivos desde la carpeta actual\n# Abre el Explorador en el directorio actual\nii .\n# También puedes abrir un archivo o carpeta específica\nii .\\reportes\\index.qmd\n\nii es alias de Invoke-Item y ejecuta la acción por defecto (abrir carpeta/archivo con su app asociada).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Miniconda</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_001_narrativa_uv_git/003_uv.html",
+    "href": "sesiones/notebooks_001_narrativa_uv_git/003_uv.html",
+    "title": "4  ¿Por qué entornos virtuales?",
+    "section": "",
+    "text": "Aislamiento de dependencias: cada proyecto instala sus paquetes sin afectar al sistema ni a otros proyectos.\n\nReproducibilidad: puedes reconstruir el ambiente con una lista bloqueada de versiones.\n\nEvitar “entornos del sistema”: reduces errores por Python administrado por el SO o por permisos.\n\nDescartables y locales: se eliminan y recrean rápido; por convención se llaman .venv/ en la raíz del proyecto.\n\n\n5 Recomendaciones de un espacio de trabajo\n\nCrea un entorno virtual por proyecto para aislar dependencias y evitar conflictos.\nUsa uv init espacio-de-trabajo para crear un espacio-de-trabajo\nO entra a espacio-de-trabajo y uv init para inicializar un espacio de trabajo",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>¿Por qué entornos virtuales?</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.html",
+    "href": "sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.html",
+    "title": "5  Datos de una estación meteorológica",
+    "section": "",
+    "text": "archivo en formato parquet\nDel 27 de octubre de 2023 al 30 de abril del 2025\nDatos cada 10 minutos\ndhi: diffuse horizontal irradiance\ndni: direct normal irradiance\nghi: global horizontal irradiance\np_atm: presión atmosférica\nrain_acc: mm de lluvia\nrh: relative humidity\nsolar_altitude: altura solar en grados\ntdb: temperature dry bulb\nuv: ultra violeta\nwd: wind direction\nws: wind speed\n\n\nimport pandas as pd\nimport missingno as msno\n\n\nf = '../data/ClimaLab_2023-10-27_2025-04-30.parquet'\ntmx = pd.read_parquet(f)\ntmx.info()\n\n&lt;class 'pandas.core.frame.DataFrame'&gt;\nDatetimeIndex: 79036 entries, 2023-10-27 16:40:00 to 2025-04-30 00:00:00\nData columns (total 11 columns):\n #   Column          Non-Null Count  Dtype  \n---  ------          --------------  -----  \n 0   dhi             39186 non-null  float64\n 1   dni             39043 non-null  float64\n 2   ghi             39104 non-null  float64\n 3   p_atm           79036 non-null  float64\n 4   rain_acc        79036 non-null  float64\n 5   rh              79036 non-null  float64\n 6   solar_altitude  79036 non-null  float64\n 7   tdb             79036 non-null  float64\n 8   uv              79036 non-null  float64\n 9   wd              79036 non-null  float64\n 10  ws              79036 non-null  float64\ndtypes: float64(11)\nmemory usage: 7.2 MB\n\n\n\ntmx\n\n\n\n\n\n\n\nvariable\ndhi\ndni\nghi\np_atm\nrain_acc\nrh\nsolar_altitude\ntdb\nuv\nwd\nws\n\n\ndate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023-10-27 16:40:00\nNaN\n443.2\n238.0\n873.2120\n17.1\n61.14\n18.644204\n28.07\n0.018\n226.50\n1.569\n\n\n2023-10-27 16:50:00\nNaN\nNaN\n187.5\n873.2559\n6.3\n62.76\n16.430841\n27.78\n0.014\n171.60\n1.631\n\n\n2023-10-27 17:00:00\n1360.00\nNaN\n167.5\n873.2161\n27.8\n64.26\n14.204506\n28.00\n0.011\n314.70\n0.479\n\n\n2023-10-27 17:10:00\n74.14\n520.5\n163.1\n873.1834\n5.4\n66.82\n11.967374\n28.69\n0.009\n163.60\n0.504\n\n\n2023-10-27 17:20:00\n67.62\n269.2\n126.1\n873.2775\n1.5\n60.92\n9.722172\n28.77\n0.006\n260.30\n0.964\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n2025-04-29 23:20:00\nNaN\nNaN\nNaN\n861.8378\n0.0\n43.17\n-52.087453\n26.46\n0.000\n164.30\n0.808\n\n\n2025-04-29 23:30:00\nNaN\nNaN\nNaN\n861.8724\n0.0\n46.12\n-53.192891\n26.30\n0.000\n337.00\n0.518\n\n\n2025-04-29 23:40:00\nNaN\nNaN\nNaN\n861.8623\n0.0\n46.82\n-54.162933\n25.57\n0.000\n70.61\n1.358\n\n\n2025-04-29 23:50:00\nNaN\nNaN\nNaN\n861.9176\n0.0\n47.47\n-54.986312\n25.59\n0.000\n133.60\n0.625\n\n\n2025-04-30 00:00:00\nNaN\nNaN\nNaN\n861.9011\n0.0\n46.62\n-55.652470\n25.33\n0.000\n155.30\n1.479\n\n\n\n\n79036 rows × 11 columns\n\n\n\n\nmsno.matrix(tmx)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Datos de una estación meteorológica</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html",
+    "href": "sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html",
+    "title": "6  Tips",
+    "section": "",
+    "text": "Matplotlib y la programación orientada a objetos\nNo uses nombres como df, df_algo, evita df y usa nombres cortos, sin mayúsculas, de preferencia sin guiones bajos, y que tengan un significado para ti y tu equipe de trabajo.\ntmxhace referencia a temixco, es más corto y fácil de escribir\n¿Qué es la “programación orientada a objetos” (POO) en Matplotlib?\nMatplotlib tiene dos “modos” de uso:\nModo procedural/estado global (pyplot puro): Usas funciones como plt.plot(…), plt.title(…), y Matplotlib va operando sobre “la figura actual” y “los ejes actuales”. Es rápido para bocetar.\nModo orientado a objetos (OO): Tú manipulas objetos explícitos: una Figure (la hoja) que contiene uno o varios Axes (los “sistemas de ejes” donde dibujas). A su vez, cada Axes contiene Artists (líneas, textos, parches). En vez de decir “pon título a lo actual”, le dices al objeto ax: “pon tu título”.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Tips</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html#matplotlib-y-la-programación-orientada-a-objetos",
+    "href": "sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html#matplotlib-y-la-programación-orientada-a-objetos",
+    "title": "6  Tips",
+    "section": "",
+    "text": "La siguiente gr’afica es posible\nPeeero, no se recomienda hacerlo así.\n\n\n# Variables esperadas en tmx:\n# ['dhi', 'dni', 'ghi', 'p_atm', 'rain_acc', 'rh', 'solar_altitude', 'tdb', 'uv', 'wd', 'ws']\n\nplt.figure(figsize=(14, 22))\n\n\n# plt.subplot(11, 1, 1) es una llamada procedural que:\n\n# Divide el “canvas” en una rejilla de 11 filas × 1 columna\n\n# Activa (y devuelve) el subplot número 1 de esa rejilla (el de arriba del todo)\n# --- 1) dhi ---\nax1 = plt.subplot(11, 1, 1)\nplt.plot(tmx.index, tmx['dhi'], label='dhi')\nplt.ylabel('dhi')\nplt.legend()\n\n# --- 2) dni ---\nplt.subplot(11, 1, 2, sharex=ax1)\nplt.plot(tmx.index, tmx['dni'], label='dni')\nplt.ylabel('dni')\nplt.legend()\n\n# --- 3) ghi ---\nplt.subplot(11, 1, 3, sharex=ax1)\nplt.plot(tmx.index, tmx['ghi'], label='ghi')\nplt.ylabel('ghi')\nplt.legend()\n\n# --- 4) p_atm ---\nplt.subplot(11, 1, 4, sharex=ax1)\nplt.plot(tmx.index, tmx['p_atm'], label='p_atm')\nplt.ylabel('p_atm')\nplt.legend()\n\n# --- 5) rain_acc ---\nplt.subplot(11, 1, 5, sharex=ax1)\nplt.plot(tmx.index, tmx['rain_acc'], label='rain_acc')\nplt.ylabel('rain_acc')\nplt.legend()\n\n# --- 6) rh ---\nplt.subplot(11, 1, 6, sharex=ax1)\nplt.plot(tmx.index, tmx['rh'], label='rh')\nplt.ylabel('rh')\nplt.legend()\n\n# --- 7) solar_altitude ---\nplt.subplot(11, 1, 7, sharex=ax1)\nplt.plot(tmx.index, tmx['solar_altitude'], label='solar_altitude')\nplt.ylabel('solar_altitude')\nplt.legend()\n\n# --- 8) tdb ---\nplt.subplot(11, 1, 8, sharex=ax1)\nplt.plot(tmx.index, tmx['tdb'], label='tdb')\nplt.ylabel('tdb')\nplt.legend(loc='upper right')\n\n# --- 9) uv ---\nplt.subplot(11, 1, 9, sharex=ax1)\nplt.plot(tmx.index, tmx['uv'], label='uv')\nplt.ylabel('uv')\nplt.legend()\n\n# --- 10) wd ---\nplt.subplot(11, 1, 10, sharex=ax1)\nplt.plot(tmx.index, tmx['wd'], label='wd')\nplt.ylabel('wd')\nplt.legend()\n\n# --- 11) ws ---\nplt.subplot(11, 1, 11, sharex=ax1)\nplt.plot(tmx.index, tmx['ws'], label='ws')\nplt.ylabel('ws')\nplt.xlabel('Tiempo')\nplt.legend()",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Tips</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html#por-que-escribir-cuando-puedes-iterar",
+    "href": "sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html#por-que-escribir-cuando-puedes-iterar",
+    "title": "6  Tips",
+    "section": "Por qu’e escribir cuando puedes iterar",
+    "text": "Por qu’e escribir cuando puedes iterar\nconceptos claves: - columnas, iterable - axs, iterable con len(columnas) objetos\n\ncolumnas = tmx.columns\n\nfig, axs = plt.subplots(len(columnas),1, figsize=(12,18),sharex=True)\n\nfor i,columna in enumerate(columnas):\n    axs[i].plot(tmx[columna],label=columna)\n    axs[i].legend()\n    axs[i].set_ylabel(columna)\n\n\n\n\n\n\n\n\n\ncolumnas = tmx.columns\ncolores = ['black','gray','tab:blue','tab:orange','tab:green','green','tab:red','tab:red','tab:red','tab:red','black','gray','tab:blue','tab:orange','tab:green','green']\n\n\nfig, axs = plt.subplots(len(columnas),1, figsize=(12,18),sharex=True)\n\nfor i,columna in enumerate(columnas):\n    axs[i].plot(tmx[columna],label=columna,color=colores[i])\n    axs[i].legend()\n    axs[i].set_ylabel(columna)\n\n\n\n\n\n\n\n\nEs importante conocer la anatomia de una figura desde matplotlib y aprender los conceptos de POO, recomendamos aprender matplotlib antes de pasar a graficadores m’as avanzados como plotly o seaborn, por eso, te dejo la anatomy of a figure de la documentaci’on de matplotlib\nhttps://matplotlib.org/stable/gallery/showcase/anatomy.html\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfrom matplotlib.patches import Circle\nfrom matplotlib.patheffects import withStroke\nfrom matplotlib.ticker import AutoMinorLocator, MultipleLocator\n\nroyal_blue = [0, 20/256, 82/256]\n\n\n# make the figure\n\nnp.random.seed(19680801)\n\nX = np.linspace(0.5, 3.5, 100)\nY1 = 3+np.cos(X)\nY2 = 1+np.cos(1+X/0.75)/2\nY3 = np.random.uniform(Y1, Y2, len(X))\n\nfig = plt.figure(figsize=(7.5, 7.5))\nax = fig.add_axes([0.2, 0.17, 0.68, 0.7], aspect=1)\n\nax.xaxis.set_major_locator(MultipleLocator(1.000))\nax.xaxis.set_minor_locator(AutoMinorLocator(4))\nax.yaxis.set_major_locator(MultipleLocator(1.000))\nax.yaxis.set_minor_locator(AutoMinorLocator(4))\nax.xaxis.set_minor_formatter(\"{x:.2f}\")\n\nax.set_xlim(0, 4)\nax.set_ylim(0, 4)\n\nax.tick_params(which='major', width=1.0, length=10, labelsize=14)\nax.tick_params(which='minor', width=1.0, length=5, labelsize=10,\n               labelcolor='0.25')\n\nax.grid(linestyle=\"--\", linewidth=0.5, color='.25', zorder=-10)\n\nax.plot(X, Y1, c='C0', lw=2.5, label=\"Blue signal\", zorder=10)\nax.plot(X, Y2, c='C1', lw=2.5, label=\"Orange signal\")\nax.plot(X[::3], Y3[::3], linewidth=0, markersize=9,\n        marker='s', markerfacecolor='none', markeredgecolor='C4',\n        markeredgewidth=2.5)\n\nax.set_title(\"Anatomy of a figure\", fontsize=20, verticalalignment='bottom')\nax.set_xlabel(\"x Axis label\", fontsize=14)\nax.set_ylabel(\"y Axis label\", fontsize=14)\nax.legend(loc=\"upper right\", fontsize=14)\n\n\n# Annotate the figure\n\ndef annotate(x, y, text, code):\n    # Circle marker\n    c = Circle((x, y), radius=0.15, clip_on=False, zorder=10, linewidth=2.5,\n               edgecolor=royal_blue + [0.6], facecolor='none',\n               path_effects=[withStroke(linewidth=7, foreground='white')])\n    ax.add_artist(c)\n\n    # use path_effects as a background for the texts\n    # draw the path_effects and the colored text separately so that the\n    # path_effects cannot clip other texts\n    for path_effects in [[withStroke(linewidth=7, foreground='white')], []]:\n        color = 'white' if path_effects else royal_blue\n        ax.text(x, y-0.2, text, zorder=100,\n                ha='center', va='top', weight='bold', color=color,\n                style='italic', fontfamily='monospace',\n                path_effects=path_effects)\n\n        color = 'white' if path_effects else 'black'\n        ax.text(x, y-0.33, code, zorder=100,\n                ha='center', va='top', weight='normal', color=color,\n                fontfamily='monospace', fontsize='medium',\n                path_effects=path_effects)\n\n\nannotate(3.5, -0.13, \"Minor tick label\", \"ax.xaxis.set_minor_formatter\")\nannotate(-0.03, 1.0, \"Major tick\", \"ax.yaxis.set_major_locator\")\nannotate(0.00, 3.75, \"Minor tick\", \"ax.yaxis.set_minor_locator\")\nannotate(-0.15, 3.00, \"Major tick label\", \"ax.yaxis.set_major_formatter\")\nannotate(1.68, -0.39, \"xlabel\", \"ax.set_xlabel\")\nannotate(-0.38, 1.67, \"ylabel\", \"ax.set_ylabel\")\nannotate(1.52, 4.15, \"Title\", \"ax.set_title\")\nannotate(1.75, 2.80, \"Line\", \"ax.plot\")\nannotate(2.25, 1.54, \"Markers\", \"ax.scatter\")\nannotate(3.00, 3.00, \"Grid\", \"ax.grid\")\nannotate(3.60, 3.58, \"Legend\", \"ax.legend\")\nannotate(2.5, 0.55, \"Axes\", \"fig.subplots\")\nannotate(4, 4.5, \"Figure\", \"plt.figure\")\nannotate(0.65, 0.01, \"x Axis\", \"ax.xaxis\")\nannotate(0, 0.36, \"y Axis\", \"ax.yaxis\")\nannotate(4.0, 0.7, \"Spine\", \"ax.spines\")\n\n# frame around figure\nfig.patch.set(linewidth=4, edgecolor='0.5')\nplt.show()\n\n\n\n\n\n\n\n\n\nMatplotlib primero (fundamentos y control fino)\nEs la base del ecosistema: todo lo que hace Seaborn/Plotly en 2D “pasa” por conceptos que nacen en Matplotlib (figura, ejes, artistas).\nEnseña a pensar en la jerarquía Figure→Axes→Artists y en el estilo OO (control total del layout, ejes secundarios, anotaciones).\nSi dominas Matplotlib, cualquier “rareza” de gráficos la puedes resolver.\n\n\nSeaborn después (estadística y estética por defecto)\nAcelera el análisis exploratorio: relplot, catplot, displot, pairplot, manejo integrado de DataFrames y variables categóricas/numéricas.\nTe da buenos estilos por defecto y mapea variables a color/forma/tamaño fácilmente.\nIdeal para enseñar comparaciones estadísticas y “long vs wide data” sin pelearte con bajo nivel.\n\n\nPlotly al final (interactividad)\nAñade hover, zoom, selección, exportación a HTML y gráficos 3D con poca fricción.\nPerfecto para dashboards o entregar resultados interactivos a tomadores de decisión.\nUna vez claros los conceptos de capas y ejes, la transición a objetos go.Figure/px es natural.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Tips</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html",
+    "href": "sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html",
+    "title": "7  https://seaborn.pydata.org/",
+    "section": "",
+    "text": "Es importante conocer matplotlib …\nSeaborn no solo es una libreria de visualización (basada en matplotlib), sino una interfaz para proveer información estadística\nPara darle formato\nvar = \"tdb\"  # o \"ghi\", \"ws\", etc.\n\nhm = (tidy[tidy[\"variable\"]==var]\n      .groupby([\"hora\",\"mes\"], sort=True)[\"valor\"]\n      .mean()\n      .unstack(\"mes\"))\n\nfig, ax = plt.subplots(figsize=(12, 4))\nsns.heatmap(hm, ax=ax, cmap=\"inferno\", linewidths=0.3, linecolor=\"white\")\nax.set_xlabel(\"Mes\")\nax.set_ylabel(\"Hora del día\")\nfig.tight_layout()\nplt.show()",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>https://seaborn.pydata.org/</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html",
+    "href": "sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html",
+    "title": "8  Asegura ‘date’ como columna",
+    "section": "",
+    "text": "import pandas as pd\nimport plotly.express as px\nimport numpy as np\n\n\nf = '../data/ClimaLab_2023-10-27_2025-04-30.parquet'\ntmx = pd.read_parquet(f)\ntmx = tmx.reset_index().rename(columns={\"index\": \"date\"})\ntmx\n\n\n\n\n\n\n\nvariable\ndate\ndhi\ndni\nghi\np_atm\nrain_acc\nrh\nsolar_altitude\ntdb\nuv\nwd\nws\n\n\n\n\n0\n2023-10-27 16:40:00\nNaN\n443.2\n238.0\n873.2120\n17.1\n61.14\n18.644204\n28.07\n0.018\n226.50\n1.569\n\n\n1\n2023-10-27 16:50:00\nNaN\nNaN\n187.5\n873.2559\n6.3\n62.76\n16.430841\n27.78\n0.014\n171.60\n1.631\n\n\n2\n2023-10-27 17:00:00\n1360.00\nNaN\n167.5\n873.2161\n27.8\n64.26\n14.204506\n28.00\n0.011\n314.70\n0.479\n\n\n3\n2023-10-27 17:10:00\n74.14\n520.5\n163.1\n873.1834\n5.4\n66.82\n11.967374\n28.69\n0.009\n163.60\n0.504\n\n\n4\n2023-10-27 17:20:00\n67.62\n269.2\n126.1\n873.2775\n1.5\n60.92\n9.722172\n28.77\n0.006\n260.30\n0.964\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n79031\n2025-04-29 23:20:00\nNaN\nNaN\nNaN\n861.8378\n0.0\n43.17\n-52.087453\n26.46\n0.000\n164.30\n0.808\n\n\n79032\n2025-04-29 23:30:00\nNaN\nNaN\nNaN\n861.8724\n0.0\n46.12\n-53.192891\n26.30\n0.000\n337.00\n0.518\n\n\n79033\n2025-04-29 23:40:00\nNaN\nNaN\nNaN\n861.8623\n0.0\n46.82\n-54.162933\n25.57\n0.000\n70.61\n1.358\n\n\n79034\n2025-04-29 23:50:00\nNaN\nNaN\nNaN\n861.9176\n0.0\n47.47\n-54.986312\n25.59\n0.000\n133.60\n0.625\n\n\n79035\n2025-04-30 00:00:00\nNaN\nNaN\nNaN\n861.9011\n0.0\n46.62\n-55.652470\n25.33\n0.000\n155.30\n1.479\n\n\n\n\n79036 rows × 12 columns\n\n\n\n\ntidy = tmx.melt(id_vars=\"date\", var_name=\"variable\", value_name=\"valor\")\ntidy\n\n\n\n\n\n\n\n\ndate\nvariable\nvalor\n\n\n\n\n0\n2023-10-27 16:40:00\ndhi\nNaN\n\n\n1\n2023-10-27 16:50:00\ndhi\nNaN\n\n\n2\n2023-10-27 17:00:00\ndhi\n1360.000\n\n\n3\n2023-10-27 17:10:00\ndhi\n74.140\n\n\n4\n2023-10-27 17:20:00\ndhi\n67.620\n\n\n...\n...\n...\n...\n\n\n869391\n2025-04-29 23:20:00\nws\n0.808\n\n\n869392\n2025-04-29 23:30:00\nws\n0.518\n\n\n869393\n2025-04-29 23:40:00\nws\n1.358\n\n\n869394\n2025-04-29 23:50:00\nws\n0.625\n\n\n869395\n2025-04-30 00:00:00\nws\n1.479\n\n\n\n\n869396 rows × 3 columns\n\n\n\n\n\n\nfig = px.line(\n    tmx,\n    x=\"date\",\n    y=[\"ghi\", \"dni\", \"dhi\"],\n    title=\"Irradiancias (interactivo)\",\n    labels={\"value\": \"W/m²\", \"variable\": \"Magnitud\", \"date\": \"Tiempo\"}\n)\nfig.update_xaxes(rangeslider_visible=True)\nfig.show()\n\n\n\n\nfig = px.line(\n    tidy,\n    x=\"date\", y=\"valor\",\n    facet_col=\"variable\", facet_col_wrap=3,\n    height=700,\n    title=\"Panel de series por variable\",\n    labels={\"valor\": \"Valor\", \"date\": \"Tiempo\"}\n)\n# No forzar el mismo eje-y (unidades distintas)\nfig.for_each_yaxis(lambda a: a.update(matches=None))\nfig.update_xaxes(showspikes=True)\nfig.show()\n\n\n\ntmx[\"hora\"] = tmx[\"date\"].dt.hour\ntmx[\"mes\"]  = tmx[\"date\"].dt.month\n\nhm = (tmx.groupby([\"hora\", \"mes\"])[\"tdb\"]\n        .mean()\n        .unstack(\"mes\")\n        .reindex(index=range(24), columns=range(1, 13)))\n\nfig = px.imshow(\n    hm,\n    origin=\"lower\",\n    aspect=\"auto\",\n    color_continuous_scale=\"jet\",\n    labels=dict(x=\"Mes\", y=\"Hora del día\", color=\"tdb [°C]\"),\n)\n\nfig.show()",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>003_plotly.html</span>"
+    ]
   }
 ]
