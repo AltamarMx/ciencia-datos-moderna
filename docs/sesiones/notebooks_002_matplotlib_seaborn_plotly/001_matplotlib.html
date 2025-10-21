@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; Tips – Bases para la ciencia de datos moderna</title>
+<title>7&nbsp; Matplotlib – Bases para la ciencia de datos moderna</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,14 +73,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8c40e8074a9974d9bf841ec8793f006c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-c10af8267f2df204c1ca93a0fb2fa97c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-8c40e8074a9974d9bf841ec8793f006c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-863ab20449d2f3d5951a2e693f5499b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Tips</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Matplotlib</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -347,19 +347,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Tips</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Matplotlib</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">https://seaborn.pydata.org/</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Seaborn</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">003_plotly.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Plotly</span></span></a>
   </div>
 </li>
     </ul>
@@ -372,7 +372,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#matplotlib-y-la-programación-orientada-a-objetos" id="toc-matplotlib-y-la-programación-orientada-a-objetos" class="nav-link active" data-scroll-target="#matplotlib-y-la-programación-orientada-a-objetos">Matplotlib y la programación orientada a objetos</a>
+  <li><a href="#tips" id="toc-tips" class="nav-link active" data-scroll-target="#tips">Tips</a></li>
+  <li><a href="#matplotlib-y-la-programación-orientada-a-objetos" id="toc-matplotlib-y-la-programación-orientada-a-objetos" class="nav-link" data-scroll-target="#matplotlib-y-la-programación-orientada-a-objetos">Matplotlib y la programación orientada a objetos</a>
   <ul class="collapse">
   <li><a href="#la-siguiente-grafica-es-posible" id="toc-la-siguiente-grafica-es-posible" class="nav-link" data-scroll-target="#la-siguiente-grafica-es-posible">La siguiente gr’afica es posible</a></li>
   </ul></li>
@@ -391,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Tips</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Matplotlib</span></h1>
 </div>
 
 
@@ -408,13 +409,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="1e40b77c-1cc8-4f2b-810b-dd098062b372" class="cell" data-execution_count="1">
+<div id="1e40b77c-1cc8-4f2b-810b-dd098062b372" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<section id="tips" class="level3">
+<h3 class="anchored" data-anchor-id="tips">Tips</h3>
 <p>No uses nombres como df, df_algo, evita df y usa nombres cortos, sin mayúsculas, de preferencia sin guiones bajos, y que tengan un significado para ti y tu equipe de trabajo.</p>
 <p><code>tmx</code>hace referencia a temixco, es más corto y fácil de escribir</p>
-<div id="732fa038-9ae0-426f-aaf4-1bc85e13c57d" class="cell" data-execution_count="2">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>parquet es un formato de archivo que comprime la informacion, conserva la estructura pero se sacrifica visibilidad, no se puede visualizar con un editor de texto.</p>
+<p>parquet es multiplataforma y multi lenguaje, propicia la interoperabilidad.</p>
+</div>
+</div>
+<div id="732fa038-9ae0-426f-aaf4-1bc85e13c57d" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="st">"../data/ClimaLab_2023-10-27_2025-04-30.parquet"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tmx <span class="op">=</span> pd.read_parquet(f)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>tmx.info()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -439,6 +456,7 @@ dtypes: float64(11)
 memory usage: 7.2 MB</code></pre>
 </div>
 </div>
+</section>
 <section id="matplotlib-y-la-programación-orientada-a-objetos" class="level2">
 <h2 class="anchored" data-anchor-id="matplotlib-y-la-programación-orientada-a-objetos">Matplotlib y la programación orientada a objetos</h2>
 <p>¿Qué es la “programación orientada a objetos” (POO) en Matplotlib?</p>
@@ -448,7 +466,7 @@ memory usage: 7.2 MB</code></pre>
 <section id="la-siguiente-grafica-es-posible" class="level3">
 <h3 class="anchored" data-anchor-id="la-siguiente-grafica-es-posible">La siguiente gr’afica es posible</h3>
 <p>Peeero, no se recomienda hacerlo así.</p>
-<div id="1162bb73-4260-47ec-8ece-d63877627c17" class="cell" data-scrolled="true" data-execution_count="3">
+<div id="1162bb73-4260-47ec-8ece-d63877627c17" class="cell" data-scrolled="true" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Variables esperadas en tmx:</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ['dhi', 'dni', 'ghi', 'p_atm', 'rain_acc', 'rh', 'solar_altitude', 'tdb', 'uv', 'wd', 'ws']</span></span>
@@ -557,7 +575,7 @@ memory usage: 7.2 MB</code></pre>
 </div>
 </div>
 </div>
-<div id="f93ae428-3a2b-42fb-b257-4e66d5b68414" class="cell" data-execution_count="7">
+<div id="f93ae428-3a2b-42fb-b257-4e66d5b68414" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>columnas <span class="op">=</span> tmx.columns</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>colores <span class="op">=</span> [<span class="st">'black'</span>,<span class="st">'gray'</span>,<span class="st">'tab:blue'</span>,<span class="st">'tab:orange'</span>,<span class="st">'tab:green'</span>,<span class="st">'green'</span>,<span class="st">'tab:red'</span>,<span class="st">'tab:red'</span>,<span class="st">'tab:red'</span>,<span class="st">'tab:red'</span>,<span class="st">'black'</span>,<span class="st">'gray'</span>,<span class="st">'tab:blue'</span>,<span class="st">'tab:orange'</span>,<span class="st">'tab:green'</span>,<span class="st">'green'</span>]</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -578,7 +596,7 @@ memory usage: 7.2 MB</code></pre>
 </div>
 <p>Es importante conocer la anatomia de una figura desde matplotlib y aprender los conceptos de POO, recomendamos aprender matplotlib antes de pasar a graficadores m’as avanzados como plotly o seaborn, por eso, te dejo la anatomy of a figure de la documentaci’on de matplotlib</p>
 <p>https://matplotlib.org/stable/gallery/showcase/anatomy.html</p>
-<div id="479faad7-1080-43a5-a505-c1b013033a8a" class="cell" data-execution_count="8">
+<div id="479faad7-1080-43a5-a505-c1b013033a8a" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1124,8 +1142,8 @@ memory usage: 7.2 MB</code></pre>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="pagination-link" aria-label="https://seaborn.pydata.org/">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">https://seaborn.pydata.org/</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="pagination-link" aria-label="Seaborn">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Seaborn</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
