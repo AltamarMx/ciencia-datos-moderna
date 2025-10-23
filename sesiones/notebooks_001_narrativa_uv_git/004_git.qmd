@@ -94,32 +94,16 @@ git init
 # 2) Ver estado de cambios
 git status
 
-# 3) Ver diferencias (antes de añadir / confirmar)
-git diff                   # contra el último commit
-git diff --staged          # lo que ya está en "staging"
 
 # 4) Añadir archivos al "staging area"
 git add .                  # todo (mejor ser selectivo)
-git add src/app.py         # archivo específico
-git add .gitignore
 
 # 5) Confirmar con mensaje
 git commit -m "Inicializa proyecto: estructura, .gitignore y README"
 
-# 6) Historial compacto
-git log --oneline --graph --decorate --all
 
-# 7) Deshacer staging o cambios del working directory
-git restore --staged src/app.py  # saca del staging
-git restore src/app.py           # descarta cambios locales en el archivo
 
-# 8) Dejar de rastrear un archivo que ya subiste por error
-git rm --cached ruta/al/archivo-grande.zip
-git commit -m "Deja de rastrear archivo grande"
 
-# 9) Conectar con un remoto (p.ej., GitHub) y publicar
-git remote add origin https://github.com/usuario/proyecto.git
-git push -u origin main          # primera vez (crea el upstream)
 # Siguientes veces:
 git push                         # empuja cambios
 git pull                         # trae cambios del remoto

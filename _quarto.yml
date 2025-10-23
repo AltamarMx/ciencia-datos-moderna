@@ -24,6 +24,7 @@ book:
   # repo-url: https://github.com/altamarmx/python-2026-1/
   chapters:
     - index.qmd 
+    - 001_video.qmd 
     - sesiones/notebooks_001_narrativa_uv_git/001_narrativa.qmd
     - sesiones/notebooks_001_narrativa_uv_git/002_miniconda_terminal.qmd
     - sesiones/notebooks_001_narrativa_uv_git/003_uv.qmd
