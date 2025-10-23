@@ -32,7 +32,7 @@ book:
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.ipynb
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.ipynb
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.ipynb
-    - sesiones/notebooks_002_matplotlib_seaborn_plotly/003_seaborn.ipynb
+    - sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.ipynb
     
 
 format:

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>9&nbsp; Seaborn – Bases para la ciencia de datos moderna</title>
+<title>10&nbsp; Seaborn – Bases para la ciencia de datos moderna</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,22 +65,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html" rel="next">
-<link href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" rel="prev">
+<link href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-863ab20449d2f3d5951a2e693f5499b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-8c40e8074a9974d9bf841ec8793f006c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-c10af8267f2df204c1ca93a0fb2fa97c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-8c40e8074a9974d9bf841ec8793f006c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -299,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Seaborn</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seaborn</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -361,14 +360,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Seaborn</span></span></a>
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Anatomia de una figura</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Plotly</span></span></a>
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seaborn</span></span></a>
   </div>
 </li>
     </ul>
@@ -376,18 +375,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
-   
-  <ul>
-  <li><a href="#httpsseaborn.pydata.org" id="toc-httpsseaborn.pydata.org" class="nav-link active" data-scroll-target="#httpsseaborn.pydata.org"><span class="header-section-number">10</span> https://seaborn.pydata.org/</a>
-  <ul class="collapse">
-  <li><a href="#es-importante-conocer-matplotlib" id="toc-es-importante-conocer-matplotlib" class="nav-link" data-scroll-target="#es-importante-conocer-matplotlib">Es importante conocer matplotlib …</a></li>
-  </ul></li>
-  <li><a href="#relaciones-entre-variables" id="toc-relaciones-entre-variables" class="nav-link" data-scroll-target="#relaciones-entre-variables"><span class="header-section-number">11</span> Relaciones entre variables</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -395,7 +384,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Seaborn</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seaborn</span></h1>
 </div>
 
 
@@ -412,29 +401,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="httpsseaborn.pydata.org" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> https://seaborn.pydata.org/</h1>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div id="35c31792-523c-4365-b57d-5b05b65a79ed" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="callout-title-container flex-fill">
-Importante
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Seaborn no solo es una libreria de visualización (basada en matplotlib), sino una interfaz para proveer información estadística</p>
-</div>
-</div>
-<div id="84f67d5e-a8c7-483a-b294-669c924154eb" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="eba414b8-786b-445f-bdb9-b0eb737ffd73" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="st">'../data/ClimaLab_2023-10-27_2025-04-30.parquet'</span></span>
+<div id="967a7ab8-0661-47e3-9690-aaf254159fc6" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="st">"../data/ClimaLab_2023-10-27_2025-04-30.parquet"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tmx <span class="op">=</span> pd.read_parquet(f)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>tmx.info()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -458,105 +431,558 @@ dtypes: float64(11)
 memory usage: 7.2 MB</code></pre>
 </div>
 </div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Importante
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Se recomienda revisar la transformacion de los datos</p>
-</div>
-</div>
-<div id="2a0a1c79-d086-498f-bcc7-45627eacd53d" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Asegúrate de tener un DatetimeIndex llamado 'date'</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> tmx.reset_index()  <span class="co"># 'date' pasa a columna</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># De wide a long (tidy)</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>tidy <span class="op">=</span> df.melt(</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    id_vars<span class="op">=</span><span class="st">"date"</span>,</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    var_name<span class="op">=</span><span class="st">"variable"</span>,</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    value_name<span class="op">=</span><span class="st">"valor"</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Columnas de conveniencia</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>tidy[<span class="st">"mes"</span>]   <span class="op">=</span> tidy[<span class="st">"date"</span>].dt.month</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>tidy[<span class="st">"hora"</span>]  <span class="op">=</span> tidy[<span class="st">"date"</span>].dt.hour</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>tidy[<span class="st">"anio"</span>]  <span class="op">=</span> tidy[<span class="st">"date"</span>].dt.year</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>tidy[<span class="st">"dia_noche"</span>] <span class="op">=</span> (tmx[<span class="st">"solar_altitude"</span>].reindex(tidy.set_index(<span class="st">"date"</span>).index) <span class="op">&gt;</span> <span class="dv">0</span>).to_numpy()</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>tidy[<span class="st">"dia_noche"</span>] <span class="op">=</span> tidy[<span class="st">"dia_noche"</span>].<span class="bu">map</span>({<span class="va">True</span>:<span class="st">"Día"</span>, <span class="va">False</span>:<span class="st">"Noche"</span>})</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>tidy</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="12eec3fd-3f89-4abc-b0a2-022241dc5885" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tmx.index.month_name()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>Index(['October', 'October', 'October', 'October', 'October', 'October',
+       'October', 'October', 'October', 'October',
+       ...
+       'April', 'April', 'April', 'April', 'April', 'April', 'April', 'April',
+       'April', 'April'],
+      dtype='object', name='date', length=79036)</code></pre>
+</div>
+</div>
+<div id="29e38516-561e-47d0-bfe3-fccf6dcfe331" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tmx2024 <span class="op">=</span> tmx[tmx.index.year <span class="op">==</span> <span class="dv">2024</span>].copy()</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tmx2024_horario <span class="op">=</span> tmx2024.tdb.resample(<span class="st">"h"</span>).<span class="bu">max</span>().copy()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>tdb_heatmap <span class="op">=</span> tmx2024_horario.groupby(</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>            by<span class="op">=</span>[</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                tmx2024_horario.index.month,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                tmx2024_horario.index.hour]</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>            ).mean().unstack().T</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>tdb_heatmap</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 
 
 <table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th">variable</th>
-<th data-quarto-table-cell-role="th">valor</th>
-<th data-quarto-table-cell-role="th">mes</th>
-<th data-quarto-table-cell-role="th">hora</th>
-<th data-quarto-table-cell-role="th">anio</th>
-<th data-quarto-table-cell-role="th">dia_noche</th>
+<th data-quarto-table-cell-role="th">1</th>
+<th data-quarto-table-cell-role="th">2</th>
+<th data-quarto-table-cell-role="th">3</th>
+<th data-quarto-table-cell-role="th">4</th>
+<th data-quarto-table-cell-role="th">5</th>
+<th data-quarto-table-cell-role="th">6</th>
+<th data-quarto-table-cell-role="th">7</th>
+<th data-quarto-table-cell-role="th">8</th>
+<th data-quarto-table-cell-role="th">9</th>
+<th data-quarto-table-cell-role="th">10</th>
+<th data-quarto-table-cell-role="th">11</th>
+<th data-quarto-table-cell-role="th">12</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>2023-10-27 16:40:00</td>
-<td>dhi</td>
-<td>NaN</td>
-<td>10</td>
-<td>16</td>
-<td>2023</td>
-<td>Día</td>
+<td>19.855806</td>
+<td>22.210000</td>
+<td>23.666774</td>
+<td>26.029000</td>
+<td>27.401290</td>
+<td>24.646333</td>
+<td>21.291935</td>
+<td>21.248710</td>
+<td>20.750667</td>
+<td>20.318387</td>
+<td>19.956000</td>
+<td>18.789032</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>2023-10-27 16:50:00</td>
-<td>dhi</td>
-<td>NaN</td>
-<td>10</td>
-<td>16</td>
-<td>2023</td>
-<td>Día</td>
+<td>19.075806</td>
+<td>21.249286</td>
+<td>22.894194</td>
+<td>25.174333</td>
+<td>26.405806</td>
+<td>24.049333</td>
+<td>20.897419</td>
+<td>21.000645</td>
+<td>20.473000</td>
+<td>19.732903</td>
+<td>19.239667</td>
+<td>18.223226</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>2023-10-27 17:00:00</td>
-<td>dhi</td>
-<td>1360.000</td>
-<td>10</td>
-<td>17</td>
-<td>2023</td>
-<td>Día</td>
+<td>18.565806</td>
+<td>20.273214</td>
+<td>22.337742</td>
+<td>24.334333</td>
+<td>25.687742</td>
+<td>23.453000</td>
+<td>20.463226</td>
+<td>20.622581</td>
+<td>20.212333</td>
+<td>19.278387</td>
+<td>18.810000</td>
+<td>17.567742</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>2023-10-27 17:10:00</td>
-<td>dhi</td>
-<td>74.140</td>
-<td>10</td>
-<td>17</td>
-<td>2023</td>
-<td>Día</td>
+<td>18.227742</td>
+<td>19.526429</td>
+<td>21.666129</td>
+<td>23.567667</td>
+<td>24.965161</td>
+<td>22.915000</td>
+<td>20.036129</td>
+<td>20.400000</td>
+<td>20.109000</td>
+<td>18.740645</td>
+<td>18.176000</td>
+<td>16.937097</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>2023-10-27 17:20:00</td>
-<td>dhi</td>
-<td>67.620</td>
-<td>10</td>
-<td>17</td>
-<td>2023</td>
-<td>Día</td>
+<td>17.727097</td>
+<td>18.635714</td>
+<td>20.926774</td>
+<td>22.976333</td>
+<td>24.266452</td>
+<td>22.467000</td>
+<td>19.728710</td>
+<td>20.118065</td>
+<td>19.875667</td>
+<td>18.350000</td>
+<td>17.626000</td>
+<td>16.300323</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>17.296129</td>
+<td>18.077143</td>
+<td>20.316129</td>
+<td>22.367667</td>
+<td>23.711935</td>
+<td>22.071667</td>
+<td>19.502903</td>
+<td>19.748710</td>
+<td>19.706333</td>
+<td>17.951613</td>
+<td>17.222000</td>
+<td>15.818710</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>16.787742</td>
+<td>17.385714</td>
+<td>19.708065</td>
+<td>21.725667</td>
+<td>23.451935</td>
+<td>22.024000</td>
+<td>19.417419</td>
+<td>19.438065</td>
+<td>19.516000</td>
+<td>17.536129</td>
+<td>16.712333</td>
+<td>15.365806</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>16.602581</td>
+<td>17.290345</td>
+<td>20.979677</td>
+<td>24.571000</td>
+<td>26.739355</td>
+<td>24.158333</td>
+<td>21.366774</td>
+<td>21.104839</td>
+<td>20.465333</td>
+<td>19.054839</td>
+<td>17.571667</td>
+<td>15.417097</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>20.759355</td>
+<td>22.426207</td>
+<td>25.960000</td>
+<td>27.223667</td>
+<td>29.138065</td>
+<td>25.731333</td>
+<td>22.978387</td>
+<td>23.556129</td>
+<td>22.180667</td>
+<td>22.256774</td>
+<td>22.721333</td>
+<td>19.876129</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>23.475161</td>
+<td>24.703793</td>
+<td>26.959355</td>
+<td>28.200000</td>
+<td>29.973548</td>
+<td>26.498000</td>
+<td>24.160968</td>
+<td>24.543226</td>
+<td>23.519333</td>
+<td>23.470645</td>
+<td>24.208667</td>
+<td>22.083548</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>24.632581</td>
+<td>25.572759</td>
+<td>27.964839</td>
+<td>29.400667</td>
+<td>31.147742</td>
+<td>27.544333</td>
+<td>24.777742</td>
+<td>25.280323</td>
+<td>24.549333</td>
+<td>23.996452</td>
+<td>24.807333</td>
+<td>23.096129</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>25.500645</td>
+<td>26.553448</td>
+<td>29.235484</td>
+<td>30.764000</td>
+<td>32.458065</td>
+<td>28.747333</td>
+<td>25.639677</td>
+<td>26.041290</td>
+<td>25.387667</td>
+<td>25.114516</td>
+<td>25.796667</td>
+<td>24.353548</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>26.643226</td>
+<td>28.049655</td>
+<td>30.776129</td>
+<td>32.102000</td>
+<td>33.835484</td>
+<td>30.133667</td>
+<td>26.639032</td>
+<td>26.871935</td>
+<td>25.933000</td>
+<td>26.121613</td>
+<td>26.999333</td>
+<td>25.706452</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>27.736452</td>
+<td>29.306897</td>
+<td>32.078065</td>
+<td>33.268667</td>
+<td>35.066774</td>
+<td>31.310333</td>
+<td>27.437419</td>
+<td>27.431290</td>
+<td>26.506333</td>
+<td>26.916129</td>
+<td>28.241667</td>
+<td>27.036129</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>28.618710</td>
+<td>30.338621</td>
+<td>33.227097</td>
+<td>34.235000</td>
+<td>36.106452</td>
+<td>32.148667</td>
+<td>28.077742</td>
+<td>28.239677</td>
+<td>26.866333</td>
+<td>27.598387</td>
+<td>29.137000</td>
+<td>27.979032</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>29.280645</td>
+<td>31.301379</td>
+<td>34.062903</td>
+<td>34.966000</td>
+<td>36.845806</td>
+<td>32.598000</td>
+<td>28.573871</td>
+<td>28.886452</td>
+<td>27.185000</td>
+<td>27.760645</td>
+<td>29.713333</td>
+<td>28.495484</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>29.481935</td>
+<td>31.634828</td>
+<td>34.420645</td>
+<td>35.361000</td>
+<td>37.129355</td>
+<td>32.582333</td>
+<td>28.672258</td>
+<td>29.112258</td>
+<td>27.028000</td>
+<td>27.413226</td>
+<td>29.574000</td>
+<td>28.786774</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>28.901613</td>
+<td>31.481034</td>
+<td>34.311613</td>
+<td>35.170333</td>
+<td>36.740645</td>
+<td>32.173000</td>
+<td>28.182903</td>
+<td>28.664516</td>
+<td>26.260333</td>
+<td>26.410645</td>
+<td>28.548333</td>
+<td>27.485161</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>27.572581</td>
+<td>30.358966</td>
+<td>33.256452</td>
+<td>34.384000</td>
+<td>35.330645</td>
+<td>31.040667</td>
+<td>26.929032</td>
+<td>27.313226</td>
+<td>25.279667</td>
+<td>24.860968</td>
+<td>26.096667</td>
+<td>25.344194</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>25.001290</td>
+<td>27.545862</td>
+<td>31.348065</td>
+<td>32.456000</td>
+<td>33.972581</td>
+<td>29.677333</td>
+<td>25.657097</td>
+<td>25.804839</td>
+<td>24.214667</td>
+<td>22.807742</td>
+<td>22.699667</td>
+<td>22.178065</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>22.836774</td>
+<td>24.907241</td>
+<td>29.540968</td>
+<td>30.934333</td>
+<td>32.055161</td>
+<td>27.927333</td>
+<td>24.232581</td>
+<td>24.137097</td>
+<td>23.375000</td>
+<td>22.051613</td>
+<td>21.920000</td>
+<td>21.123548</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21</td>
+<td>21.865484</td>
+<td>23.832759</td>
+<td>27.275161</td>
+<td>29.411667</td>
+<td>30.971290</td>
+<td>27.196000</td>
+<td>23.484839</td>
+<td>23.412903</td>
+<td>22.435667</td>
+<td>21.786129</td>
+<td>21.280667</td>
+<td>20.565484</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">22</td>
+<td>21.200000</td>
+<td>23.458571</td>
+<td>25.900968</td>
+<td>28.118667</td>
+<td>29.490323</td>
+<td>26.102667</td>
+<td>22.823226</td>
+<td>22.558387</td>
+<td>21.972333</td>
+<td>21.612903</td>
+<td>20.994000</td>
+<td>20.182258</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">23</td>
+<td>20.646774</td>
+<td>22.894286</td>
+<td>24.616129</td>
+<td>27.143333</td>
+<td>28.500323</td>
+<td>24.994667</td>
+<td>21.967419</td>
+<td>21.727097</td>
+<td>21.248333</td>
+<td>21.083548</td>
+<td>20.517000</td>
+<td>19.664194</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="43b5dd55-d14f-449b-a75f-6d2cbd3f5f8e" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw a heatmap with the numeric values in each cell</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">2</span>))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(tdb_heatmap,  cmap<span class="op">=</span><span class="st">"viridis"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="003_EDA_seaborn_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="4395a080-d154-458b-bcff-21d4e7dd094a" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>tmx[<span class="st">"mes"</span>] <span class="op">=</span> tmx.index.month_name()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>tmx</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">variable</th>
+<th data-quarto-table-cell-role="th">dhi</th>
+<th data-quarto-table-cell-role="th">dni</th>
+<th data-quarto-table-cell-role="th">ghi</th>
+<th data-quarto-table-cell-role="th">p_atm</th>
+<th data-quarto-table-cell-role="th">rain_acc</th>
+<th data-quarto-table-cell-role="th">rh</th>
+<th data-quarto-table-cell-role="th">solar_altitude</th>
+<th data-quarto-table-cell-role="th">tdb</th>
+<th data-quarto-table-cell-role="th">uv</th>
+<th data-quarto-table-cell-role="th">wd</th>
+<th data-quarto-table-cell-role="th">ws</th>
+<th data-quarto-table-cell-role="th">mes</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2023-10-27 16:40:00</td>
+<td>NaN</td>
+<td>443.2</td>
+<td>238.0</td>
+<td>873.2120</td>
+<td>17.1</td>
+<td>61.14</td>
+<td>18.644204</td>
+<td>28.07</td>
+<td>0.018</td>
+<td>226.50</td>
+<td>1.569</td>
+<td>October</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2023-10-27 16:50:00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>187.5</td>
+<td>873.2559</td>
+<td>6.3</td>
+<td>62.76</td>
+<td>16.430841</td>
+<td>27.78</td>
+<td>0.014</td>
+<td>171.60</td>
+<td>1.631</td>
+<td>October</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2023-10-27 17:00:00</td>
+<td>1360.00</td>
+<td>NaN</td>
+<td>167.5</td>
+<td>873.2161</td>
+<td>27.8</td>
+<td>64.26</td>
+<td>14.204506</td>
+<td>28.00</td>
+<td>0.011</td>
+<td>314.70</td>
+<td>0.479</td>
+<td>October</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">2023-10-27 17:10:00</td>
+<td>74.14</td>
+<td>520.5</td>
+<td>163.1</td>
+<td>873.1834</td>
+<td>5.4</td>
+<td>66.82</td>
+<td>11.967374</td>
+<td>28.69</td>
+<td>0.009</td>
+<td>163.60</td>
+<td>0.504</td>
+<td>October</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2023-10-27 17:20:00</td>
+<td>67.62</td>
+<td>269.2</td>
+<td>126.1</td>
+<td>873.2775</td>
+<td>1.5</td>
+<td>60.92</td>
+<td>9.722172</td>
+<td>28.77</td>
+<td>0.006</td>
+<td>260.30</td>
+<td>0.964</td>
+<td>October</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">...</td>
@@ -567,210 +993,107 @@ Importante
 <td>...</td>
 <td>...</td>
 <td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">869391</td>
-<td>2025-04-29 23:20:00</td>
-<td>ws</td>
+<td data-quarto-table-cell-role="th">2025-04-29 23:20:00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>861.8378</td>
+<td>0.0</td>
+<td>43.17</td>
+<td>-52.087453</td>
+<td>26.46</td>
+<td>0.000</td>
+<td>164.30</td>
 <td>0.808</td>
-<td>4</td>
-<td>23</td>
-<td>2025</td>
-<td>Noche</td>
+<td>April</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">869392</td>
-<td>2025-04-29 23:30:00</td>
-<td>ws</td>
+<td data-quarto-table-cell-role="th">2025-04-29 23:30:00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>861.8724</td>
+<td>0.0</td>
+<td>46.12</td>
+<td>-53.192891</td>
+<td>26.30</td>
+<td>0.000</td>
+<td>337.00</td>
 <td>0.518</td>
-<td>4</td>
-<td>23</td>
-<td>2025</td>
-<td>Noche</td>
+<td>April</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">869393</td>
-<td>2025-04-29 23:40:00</td>
-<td>ws</td>
+<td data-quarto-table-cell-role="th">2025-04-29 23:40:00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>861.8623</td>
+<td>0.0</td>
+<td>46.82</td>
+<td>-54.162933</td>
+<td>25.57</td>
+<td>0.000</td>
+<td>70.61</td>
 <td>1.358</td>
-<td>4</td>
-<td>23</td>
-<td>2025</td>
-<td>Noche</td>
+<td>April</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">869394</td>
-<td>2025-04-29 23:50:00</td>
-<td>ws</td>
+<td data-quarto-table-cell-role="th">2025-04-29 23:50:00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>861.9176</td>
+<td>0.0</td>
+<td>47.47</td>
+<td>-54.986312</td>
+<td>25.59</td>
+<td>0.000</td>
+<td>133.60</td>
 <td>0.625</td>
-<td>4</td>
-<td>23</td>
-<td>2025</td>
-<td>Noche</td>
+<td>April</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">869395</td>
-<td>2025-04-30 00:00:00</td>
-<td>ws</td>
+<td data-quarto-table-cell-role="th">2025-04-30 00:00:00</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>861.9011</td>
+<td>0.0</td>
+<td>46.62</td>
+<td>-55.652470</td>
+<td>25.33</td>
+<td>0.000</td>
+<td>155.30</td>
 <td>1.479</td>
-<td>4</td>
-<td>0</td>
-<td>2025</td>
-<td>Noche</td>
+<td>April</td>
 </tr>
 </tbody>
 </table>
 
-<p>869396 rows × 7 columns</p>
+<p>79036 rows × 12 columns</p>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Importante
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Que critica le darias al código de arriba desde el punto de vista de narrativa computacional?</p>
-</div>
-</div>
-<div id="11c499c0-51b4-4d70-803c-4edd5cc2d8a3" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sns.set_theme()</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.relplot(</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>tidy,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"date"</span>, y<span class="op">=</span><span class="st">"valor"</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    col<span class="op">=</span><span class="st">"variable"</span>, col_wrap<span class="op">=</span><span class="dv">3</span>, kind<span class="op">=</span><span class="st">"line"</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="fl">2.6</span>, aspect<span class="op">=</span><span class="fl">1.6</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>g.set_axis_labels(<span class="st">"Tiempo"</span>, <span class="st">"Valor"</span>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>g.set_titles(<span class="st">"</span><span class="sc">{col_name}</span><span class="st">"</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>g.tight_layout()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="deb74a44-8186-4407-82c2-21bb6e85f0e0" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">2</span>))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">"mes"</span>, y<span class="op">=</span><span class="st">"tdb"</span>,data<span class="op">=</span>tmx)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="002_Seaborn_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div id="1c1074c6-4a81-4dac-9b6d-dd188dc5dd10" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Elegir variable a analizar</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>var <span class="op">=</span> <span class="st">"tdb"</span>  <span class="co"># o "ghi", "ws", etc.</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Agrega por hora y mes (promedio)</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>hm <span class="op">=</span> (tidy[tidy[<span class="st">"variable"</span>]<span class="op">==</span>var]</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>      .groupby([<span class="st">"hora"</span>,<span class="st">"mes"</span>], sort<span class="op">=</span><span class="va">True</span>)[<span class="st">"valor"</span>]</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      .mean()</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>      .unstack(<span class="st">"mes"</span>))</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.heatmap(hm, cmap<span class="op">=</span><span class="st">"jet"</span>, linewidths<span class="op">=</span><span class="fl">0.3</span>, linecolor<span class="op">=</span><span class="st">"white"</span>)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Mes"</span>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Hora del día"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="5">
-<pre><code>Text(47.25, 0.5, 'Hora del día')</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="002_Seaborn_files/figure-html/cell-6-output-2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<section id="es-importante-conocer-matplotlib" class="level2">
-<h2 class="anchored" data-anchor-id="es-importante-conocer-matplotlib">Es importante conocer matplotlib …</h2>
-<p>Para darle formato</p>
-<div id="03e2d999-41df-4b9a-885b-100e202a1166" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>var <span class="op">=</span> <span class="st">"tdb"</span>  <span class="co"># o "ghi", "ws", etc.</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>hm <span class="op">=</span> (tidy[tidy[<span class="st">"variable"</span>]<span class="op">==</span>var]</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      .groupby([<span class="st">"hora"</span>,<span class="st">"mes"</span>], sort<span class="op">=</span><span class="va">True</span>)[<span class="st">"valor"</span>]</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>      .mean()</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>      .unstack(<span class="st">"mes"</span>))</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">4</span>))</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>sns.heatmap(hm, ax<span class="op">=</span>ax, cmap<span class="op">=</span><span class="st">"inferno"</span>, linewidths<span class="op">=</span><span class="fl">0.3</span>, linecolor<span class="op">=</span><span class="st">"white"</span>)</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Mes"</span>)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Hora del día"</span>)</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="002_Seaborn_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="relaciones-entre-variables" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Relaciones entre variables</h1>
-<div id="9dd135d3-d8f6-4a56-85e9-e6379ea76c30" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sns.pairplot(tmx)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="002_Seaborn_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div id="02f83c52-a50a-4537-a82b-11e3f3fd21f5" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejemplo con temperatura de bulbo seco</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> tidy[(tidy[<span class="st">"variable"</span>]<span class="op">==</span><span class="st">"tdb"</span>) ]</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.boxenplot(</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>base,</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"mes"</span>, y<span class="op">=</span><span class="st">"valor"</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"tdb: distribución mensual (boxenplot)"</span>)</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Mes"</span>)</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"tdb [°C]"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="11">
-<pre><code>Text(0, 0.5, 'tdb [°C]')</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="002_Seaborn_files/figure-html/cell-9-output-2.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<div id="dbc00403-0432-4be6-9a8e-168bf760eba8" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejemplo con temperatura de bulbo seco</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> tidy[(tidy[<span class="st">"variable"</span>]<span class="op">==</span><span class="st">"tdb"</span>) ]</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>base,</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"mes"</span>, y<span class="op">=</span><span class="st">"valor"</span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"tdb: distribución mensual (boxenplot)"</span>)</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Mes"</span>)</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"tdb [°C]"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="12">
-<pre><code>Text(0, 0.5, 'tdb [°C]')</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="002_Seaborn_files/figure-html/cell-10-output-2.png" class="img-fluid figure-img"></p>
+<p><img src="003_EDA_seaborn_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1187,14 +1510,11 @@ Importante
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" class="pagination-link" aria-label="Matplotlib">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Matplotlib</span></span>
+      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.html" class="pagination-link" aria-label="Anatomia de una figura">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Anatomia de una figura</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html" class="pagination-link" aria-label="Plotly">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Plotly</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

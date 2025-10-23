@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>10&nbsp; Plotly – Bases para la ciencia de datos moderna</title>
+<title>9&nbsp; Anatomia de una figura – Bases para la ciencia de datos moderna</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,28 +58,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" rel="prev">
+<link href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.html" rel="next">
+<link href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2b3e328b71be8d25427581baeb23079b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-863ab20449d2f3d5951a2e693f5499b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-3fdc0c57fcd691b300e3c41e3e4a687d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-8c40e8074a9974d9bf841ec8793f006c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-c10af8267f2df204c1ca93a0fb2fa97c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-8c40e8074a9974d9bf841ec8793f006c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,9 +108,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Buscar"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-
-<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -298,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Plotly</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Anatomia de una figura</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -360,14 +358,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Seaborn</span></span></a>
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Anatomia de una figura</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Plotly</span></span></a>
+  <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seaborn</span></span></a>
   </div>
 </li>
     </ul>
@@ -384,7 +382,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Plotly</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Anatomia de una figura</span></h1>
 </div>
 
 
@@ -401,369 +399,114 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="c60e81ce-cc41-4444-acbe-daffcff243bc" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="11aef138-7c16-434e-bc7a-e127cde505b6" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span>  pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="41df35c2-cc09-4b3d-8dd4-1005ec3d16ca" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="st">'../data/ClimaLab_2023-10-27_2025-04-30.parquet'</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tmx <span class="op">=</span> pd.read_parquet(f)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>tmx <span class="op">=</span> tmx.reset_index().rename(columns<span class="op">=</span>{<span class="st">"index"</span>: <span class="st">"date"</span>})</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>tmx</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div id="e8acef54-312d-4ea0-bd00-bcfa0353cf4b" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.patches <span class="im">import</span> Circle</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.patheffects <span class="im">import</span> withStroke</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.ticker <span class="im">import</span> AutoMinorLocator, MultipleLocator</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>royal_blue <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">20</span><span class="op">/</span><span class="dv">256</span>, <span class="dv">82</span><span class="op">/</span><span class="dv">256</span>]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># make the figure</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">19680801</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> np.linspace(<span class="fl">0.5</span>, <span class="fl">3.5</span>, <span class="dv">100</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>Y1 <span class="op">=</span> <span class="dv">3</span><span class="op">+</span>np.cos(X)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>Y2 <span class="op">=</span> <span class="dv">1</span><span class="op">+</span>np.cos(<span class="dv">1</span><span class="op">+</span>X<span class="op">/</span><span class="fl">0.75</span>)<span class="op">/</span><span class="dv">2</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>Y3 <span class="op">=</span> np.random.uniform(Y1, Y2, <span class="bu">len</span>(X))</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="fl">7.5</span>, <span class="fl">7.5</span>))</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_axes([<span class="fl">0.2</span>, <span class="fl">0.17</span>, <span class="fl">0.68</span>, <span class="fl">0.7</span>], aspect<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_major_locator(MultipleLocator(<span class="fl">1.000</span>))</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_minor_locator(AutoMinorLocator(<span class="dv">4</span>))</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>ax.yaxis.set_major_locator(MultipleLocator(<span class="fl">1.000</span>))</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>ax.yaxis.set_minor_locator(AutoMinorLocator(<span class="dv">4</span>))</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>ax.xaxis.set_minor_formatter(<span class="st">"</span><span class="sc">{x:.2f}</span><span class="st">"</span>)</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">4</span>)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="dv">4</span>)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>ax.tick_params(which<span class="op">=</span><span class="st">'major'</span>, width<span class="op">=</span><span class="fl">1.0</span>, length<span class="op">=</span><span class="dv">10</span>, labelsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>ax.tick_params(which<span class="op">=</span><span class="st">'minor'</span>, width<span class="op">=</span><span class="fl">1.0</span>, length<span class="op">=</span><span class="dv">5</span>, labelsize<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>               labelcolor<span class="op">=</span><span class="st">'0.25'</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>ax.grid(linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'.25'</span>, zorder<span class="op">=-</span><span class="dv">10</span>)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>ax.plot(X, Y1, c<span class="op">=</span><span class="st">'C0'</span>, lw<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"Blue signal"</span>, zorder<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>ax.plot(X, Y2, c<span class="op">=</span><span class="st">'C1'</span>, lw<span class="op">=</span><span class="fl">2.5</span>, label<span class="op">=</span><span class="st">"Orange signal"</span>)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>ax.plot(X[::<span class="dv">3</span>], Y3[::<span class="dv">3</span>], linewidth<span class="op">=</span><span class="dv">0</span>, markersize<span class="op">=</span><span class="dv">9</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="st">'s'</span>, markerfacecolor<span class="op">=</span><span class="st">'none'</span>, markeredgecolor<span class="op">=</span><span class="st">'C4'</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>        markeredgewidth<span class="op">=</span><span class="fl">2.5</span>)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Anatomy of a figure"</span>, fontsize<span class="op">=</span><span class="dv">20</span>, verticalalignment<span class="op">=</span><span class="st">'bottom'</span>)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"x Axis label"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"y Axis label"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>ax.legend(loc<span class="op">=</span><span class="st">"upper right"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Annotate the figure</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> annotate(x, y, text, code):</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Circle marker</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> Circle((x, y), radius<span class="op">=</span><span class="fl">0.15</span>, clip_on<span class="op">=</span><span class="va">False</span>, zorder<span class="op">=</span><span class="dv">10</span>, linewidth<span class="op">=</span><span class="fl">2.5</span>,</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>               edgecolor<span class="op">=</span>royal_blue <span class="op">+</span> [<span class="fl">0.6</span>], facecolor<span class="op">=</span><span class="st">'none'</span>,</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>               path_effects<span class="op">=</span>[withStroke(linewidth<span class="op">=</span><span class="dv">7</span>, foreground<span class="op">=</span><span class="st">'white'</span>)])</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    ax.add_artist(c)</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># use path_effects as a background for the texts</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>    <span class="co"># draw the path_effects and the colored text separately so that the</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>    <span class="co"># path_effects cannot clip other texts</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> path_effects <span class="kw">in</span> [[withStroke(linewidth<span class="op">=</span><span class="dv">7</span>, foreground<span class="op">=</span><span class="st">'white'</span>)], []]:</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>        color <span class="op">=</span> <span class="st">'white'</span> <span class="cf">if</span> path_effects <span class="cf">else</span> royal_blue</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>        ax.text(x, y<span class="op">-</span><span class="fl">0.2</span>, text, zorder<span class="op">=</span><span class="dv">100</span>,</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>                ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'top'</span>, weight<span class="op">=</span><span class="st">'bold'</span>, color<span class="op">=</span>color,</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>                style<span class="op">=</span><span class="st">'italic'</span>, fontfamily<span class="op">=</span><span class="st">'monospace'</span>,</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>                path_effects<span class="op">=</span>path_effects)</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>        color <span class="op">=</span> <span class="st">'white'</span> <span class="cf">if</span> path_effects <span class="cf">else</span> <span class="st">'black'</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>        ax.text(x, y<span class="op">-</span><span class="fl">0.33</span>, code, zorder<span class="op">=</span><span class="dv">100</span>,</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>                ha<span class="op">=</span><span class="st">'center'</span>, va<span class="op">=</span><span class="st">'top'</span>, weight<span class="op">=</span><span class="st">'normal'</span>, color<span class="op">=</span>color,</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>                fontfamily<span class="op">=</span><span class="st">'monospace'</span>, fontsize<span class="op">=</span><span class="st">'medium'</span>,</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>                path_effects<span class="op">=</span>path_effects)</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">3.5</span>, <span class="op">-</span><span class="fl">0.13</span>, <span class="st">"Minor tick label"</span>, <span class="st">"ax.xaxis.set_minor_formatter"</span>)</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>annotate(<span class="op">-</span><span class="fl">0.03</span>, <span class="fl">1.0</span>, <span class="st">"Major tick"</span>, <span class="st">"ax.yaxis.set_major_locator"</span>)</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">0.00</span>, <span class="fl">3.75</span>, <span class="st">"Minor tick"</span>, <span class="st">"ax.yaxis.set_minor_locator"</span>)</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>annotate(<span class="op">-</span><span class="fl">0.15</span>, <span class="fl">3.00</span>, <span class="st">"Major tick label"</span>, <span class="st">"ax.yaxis.set_major_formatter"</span>)</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">1.68</span>, <span class="op">-</span><span class="fl">0.39</span>, <span class="st">"xlabel"</span>, <span class="st">"ax.set_xlabel"</span>)</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>annotate(<span class="op">-</span><span class="fl">0.38</span>, <span class="fl">1.67</span>, <span class="st">"ylabel"</span>, <span class="st">"ax.set_ylabel"</span>)</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">1.52</span>, <span class="fl">4.15</span>, <span class="st">"Title"</span>, <span class="st">"ax.set_title"</span>)</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">1.75</span>, <span class="fl">2.80</span>, <span class="st">"Line"</span>, <span class="st">"ax.plot"</span>)</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">2.25</span>, <span class="fl">1.54</span>, <span class="st">"Markers"</span>, <span class="st">"ax.scatter"</span>)</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">3.00</span>, <span class="fl">3.00</span>, <span class="st">"Grid"</span>, <span class="st">"ax.grid"</span>)</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">3.60</span>, <span class="fl">3.58</span>, <span class="st">"Legend"</span>, <span class="st">"ax.legend"</span>)</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">2.5</span>, <span class="fl">0.55</span>, <span class="st">"Axes"</span>, <span class="st">"fig.subplots"</span>)</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>annotate(<span class="dv">4</span>, <span class="fl">4.5</span>, <span class="st">"Figure"</span>, <span class="st">"plt.figure"</span>)</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">0.65</span>, <span class="fl">0.01</span>, <span class="st">"x Axis"</span>, <span class="st">"ax.xaxis"</span>)</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>annotate(<span class="dv">0</span>, <span class="fl">0.36</span>, <span class="st">"y Axis"</span>, <span class="st">"ax.yaxis"</span>)</span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>annotate(<span class="fl">4.0</span>, <span class="fl">0.7</span>, <span class="st">"Spine"</span>, <span class="st">"ax.spines"</span>)</span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="co"># frame around figure</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>fig.patch.<span class="bu">set</span>(linewidth<span class="op">=</span><span class="dv">4</span>, edgecolor<span class="op">=</span><span class="st">'0.5'</span>)</span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
 <div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">variable</th>
-<th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th">dhi</th>
-<th data-quarto-table-cell-role="th">dni</th>
-<th data-quarto-table-cell-role="th">ghi</th>
-<th data-quarto-table-cell-role="th">p_atm</th>
-<th data-quarto-table-cell-role="th">rain_acc</th>
-<th data-quarto-table-cell-role="th">rh</th>
-<th data-quarto-table-cell-role="th">solar_altitude</th>
-<th data-quarto-table-cell-role="th">tdb</th>
-<th data-quarto-table-cell-role="th">uv</th>
-<th data-quarto-table-cell-role="th">wd</th>
-<th data-quarto-table-cell-role="th">ws</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>2023-10-27 16:40:00</td>
-<td>NaN</td>
-<td>443.2</td>
-<td>238.0</td>
-<td>873.2120</td>
-<td>17.1</td>
-<td>61.14</td>
-<td>18.644204</td>
-<td>28.07</td>
-<td>0.018</td>
-<td>226.50</td>
-<td>1.569</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2023-10-27 16:50:00</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>187.5</td>
-<td>873.2559</td>
-<td>6.3</td>
-<td>62.76</td>
-<td>16.430841</td>
-<td>27.78</td>
-<td>0.014</td>
-<td>171.60</td>
-<td>1.631</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>2023-10-27 17:00:00</td>
-<td>1360.00</td>
-<td>NaN</td>
-<td>167.5</td>
-<td>873.2161</td>
-<td>27.8</td>
-<td>64.26</td>
-<td>14.204506</td>
-<td>28.00</td>
-<td>0.011</td>
-<td>314.70</td>
-<td>0.479</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>2023-10-27 17:10:00</td>
-<td>74.14</td>
-<td>520.5</td>
-<td>163.1</td>
-<td>873.1834</td>
-<td>5.4</td>
-<td>66.82</td>
-<td>11.967374</td>
-<td>28.69</td>
-<td>0.009</td>
-<td>163.60</td>
-<td>0.504</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>2023-10-27 17:20:00</td>
-<td>67.62</td>
-<td>269.2</td>
-<td>126.1</td>
-<td>873.2775</td>
-<td>1.5</td>
-<td>60.92</td>
-<td>9.722172</td>
-<td>28.77</td>
-<td>0.006</td>
-<td>260.30</td>
-<td>0.964</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">79031</td>
-<td>2025-04-29 23:20:00</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>861.8378</td>
-<td>0.0</td>
-<td>43.17</td>
-<td>-52.087453</td>
-<td>26.46</td>
-<td>0.000</td>
-<td>164.30</td>
-<td>0.808</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">79032</td>
-<td>2025-04-29 23:30:00</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>861.8724</td>
-<td>0.0</td>
-<td>46.12</td>
-<td>-53.192891</td>
-<td>26.30</td>
-<td>0.000</td>
-<td>337.00</td>
-<td>0.518</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">79033</td>
-<td>2025-04-29 23:40:00</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>861.8623</td>
-<td>0.0</td>
-<td>46.82</td>
-<td>-54.162933</td>
-<td>25.57</td>
-<td>0.000</td>
-<td>70.61</td>
-<td>1.358</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">79034</td>
-<td>2025-04-29 23:50:00</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>861.9176</td>
-<td>0.0</td>
-<td>47.47</td>
-<td>-54.986312</td>
-<td>25.59</td>
-<td>0.000</td>
-<td>133.60</td>
-<td>0.625</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">79035</td>
-<td>2025-04-30 00:00:00</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>861.9011</td>
-<td>0.0</td>
-<td>46.62</td>
-<td>-55.652470</td>
-<td>25.33</td>
-<td>0.000</td>
-<td>155.30</td>
-<td>1.479</td>
-</tr>
-</tbody>
-</table>
-
-<p>79036 rows × 12 columns</p>
+<figure class="figure">
+<p><img src="002_anatomia_de_una_figura_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Importante
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Cual es tu critica a la narrativa ?</p>
-</div>
-</div>
-<div id="96c08931-1363-4512-acf5-e7fc4668b692" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>tidy <span class="op">=</span> tmx.melt(id_vars<span class="op">=</span><span class="st">"date"</span>, var_name<span class="op">=</span><span class="st">"variable"</span>, value_name<span class="op">=</span><span class="st">"valor"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tidy</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">date</th>
-<th data-quarto-table-cell-role="th">variable</th>
-<th data-quarto-table-cell-role="th">valor</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>2023-10-27 16:40:00</td>
-<td>dhi</td>
-<td>NaN</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>2023-10-27 16:50:00</td>
-<td>dhi</td>
-<td>NaN</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>2023-10-27 17:00:00</td>
-<td>dhi</td>
-<td>1360.000</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>2023-10-27 17:10:00</td>
-<td>dhi</td>
-<td>74.140</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>2023-10-27 17:20:00</td>
-<td>dhi</td>
-<td>67.620</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">869391</td>
-<td>2025-04-29 23:20:00</td>
-<td>ws</td>
-<td>0.808</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">869392</td>
-<td>2025-04-29 23:30:00</td>
-<td>ws</td>
-<td>0.518</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">869393</td>
-<td>2025-04-29 23:40:00</td>
-<td>ws</td>
-<td>1.358</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">869394</td>
-<td>2025-04-29 23:50:00</td>
-<td>ws</td>
-<td>0.625</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">869395</td>
-<td>2025-04-30 00:00:00</td>
-<td>ws</td>
-<td>1.479</td>
-</tr>
-</tbody>
-</table>
-
-<p>869396 rows × 3 columns</p>
-</div>
-</div>
-</div>
-<div id="8b8c323e-22ca-4e40-9448-47a099fed8b6" class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>::: {.callout<span class="op">-</span>important}</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Nota que al guardar la libreta su tamaño crece muchisimo, hacer este tipo de graficas cuesta mucho espacio por que cada punto está representado.</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="f17a49e8-b67a-4d3a-9796-653f45291029" class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Asegura 'date' como columna</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line(</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    tmx,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"date"</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>[<span class="st">"ghi"</span>, <span class="st">"dni"</span>, <span class="st">"dhi"</span>],</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Irradiancias (interactivo)"</span>,</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>{<span class="st">"value"</span>: <span class="st">"W/m²"</span>, <span class="st">"variable"</span>: <span class="st">"Magnitud"</span>, <span class="st">"date"</span>: <span class="st">"Tiempo"</span>}</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(rangeslider_visible<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="492b6890-95a6-44dc-aac5-010091720f7d" class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.line(</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    tidy,</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"date"</span>, y<span class="op">=</span><span class="st">"valor"</span>,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    facet_col<span class="op">=</span><span class="st">"variable"</span>, facet_col_wrap<span class="op">=</span><span class="dv">3</span>,</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">700</span>,</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">"Panel de series por variable"</span>,</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span>{<span class="st">"valor"</span>: <span class="st">"Valor"</span>, <span class="st">"date"</span>: <span class="st">"Tiempo"</span>}</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># No forzar el mismo eje-y (unidades distintas)</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>fig.for_each_yaxis(<span class="kw">lambda</span> a: a.update(matches<span class="op">=</span><span class="va">None</span>))</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>fig.update_xaxes(showspikes<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="7b843b9a-1a8b-4456-b52a-975d31a5db04" class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tmx[<span class="st">"hora"</span>] <span class="op">=</span> tmx[<span class="st">"date"</span>].dt.hour</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>tmx[<span class="st">"mes"</span>]  <span class="op">=</span> tmx[<span class="st">"date"</span>].dt.month</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>hm <span class="op">=</span> (tmx.groupby([<span class="st">"hora"</span>, <span class="st">"mes"</span>])[<span class="st">"tdb"</span>]</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        .unstack(<span class="st">"mes"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        .reindex(index<span class="op">=</span><span class="bu">range</span>(<span class="dv">24</span>), columns<span class="op">=</span><span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">13</span>)))</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.imshow(</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    hm,</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    origin<span class="op">=</span><span class="st">"lower"</span>,</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    aspect<span class="op">=</span><span class="st">"auto"</span>,</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    color_continuous_scale<span class="op">=</span><span class="st">"jet"</span>,</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    labels<span class="op">=</span><span class="bu">dict</span>(x<span class="op">=</span><span class="st">"Mes"</span>, y<span class="op">=</span><span class="st">"Hora del día"</span>, color<span class="op">=</span><span class="st">"tdb [°C]"</span>),</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
@@ -1183,11 +926,14 @@ Importante
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.html" class="pagination-link" aria-label="Seaborn">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Seaborn</span></span>
+      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" class="pagination-link" aria-label="Matplotlib">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Matplotlib</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.html" class="pagination-link" aria-label="Seaborn">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Seaborn</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
