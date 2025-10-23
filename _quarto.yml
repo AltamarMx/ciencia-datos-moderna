@@ -30,8 +30,8 @@ book:
     - sesiones/notebooks_001_narrativa_uv_git/004_git.qmd
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.ipynb
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.ipynb
-    - sesiones/notebooks_002_matplotlib_seaborn_plotly/002_Seaborn.ipynb
-    - sesiones/notebooks_002_matplotlib_seaborn_plotly/003_plotly.ipynb
+    - sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.ipynb
+    - sesiones/notebooks_002_matplotlib_seaborn_plotly/003_seaborn.ipynb
     
 
 format:
