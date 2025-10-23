@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kevin Alquicira">
-<meta name="author" content="Guillermo Barrios">
 
-<title>Bases para la ciencia de datos moderna</title>
+<title>9&nbsp; Video sesión 01 – Bases para la ciencia de datos moderna</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./001_video.html" rel="next">
+<link href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.html" rel="next">
+<link href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -78,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -262,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bases para la ciencia de datos moderna — Temario</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./002_video.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Video sesión 01</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -276,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bases para la ciencia de datos moderna — Temario</span></span></a>
   </div>
 </li>
@@ -324,7 +323,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./002_video.html" class="sidebar-item-text sidebar-link">
+  <a href="./002_video.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Video sesión 01</span></span></a>
   </div>
 </li>
@@ -345,35 +344,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bases para la ciencia de datos moderna</h1>
-<p class="subtitle lead">Taller de 8 horas en 4 sesiones (2 h c/u)</p>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Video sesión 01</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autores/as</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kevin Alquicira </p>
-             <p>Guillermo Barrios </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Fecha de publicación</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2 de octubre de 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -383,43 +370,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="presentación" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Presentación</h1>
-<p>Taller práctico para instalar y organizar un entorno moderno de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo.</p>
-</section>
-<section id="requisitos" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Requisitos</h1>
-<ul>
-<li>Conocimientos básicos de Python<br>
-</li>
-<li>Computadora con privilegios de instalación</li>
-</ul>
-</section>
-<section id="temario-por-sesión" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Temario por sesión</h1>
-<section id="sesión-1-uv-git-estructura-narrativa" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-1-uv-git-estructura-narrativa">Sesión 1 — uv + Git + Estructura + Narrativa</h2>
-<p><strong>Temas:</strong> uv (entornos, dependencias), Git (init, commits, ramas, .gitignore), estructura base (<code>data/001_raw→003_processed</code>, <code>src/</code>, <code>notebooks/</code>, <code>reports/</code>), narrativa computacional (nombres y numeración 001→003).<br>
-<strong>Actividades:</strong> inicializar repo y entorno con uv, crear árbol de carpetas y README del pipeline, primer commit y rama de trabajo.</p>
-</section>
-<section id="sesión-2-graficado-con-matplotlib-seaborn-y-plotly" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-2-graficado-con-matplotlib-seaborn-y-plotly">Sesión 2 — Graficado con Matplotlib, Seaborn y Plotly</h2>
-<p><strong>Temas:</strong> Matplotlib (figuras/axes, guardado), Seaborn (relplot/displot/catplot, estilos), Plotly (express/graph_objects, export HTML).<br>
-<strong>Actividades:</strong> reproducir línea, barras y dispersión en las 3 librerías; guardar salidas en <code>reports/</code>; exportar un HTML interactivo.</p>
-</section>
-<section id="sesión-3-marimo-vscode" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-3-marimo-vscode">Sesión 3 — Marimo + VSCode</h2>
-<p><strong>Temas:</strong> Marimo (create/edit/run, celdas reactivas, parámetros, export HTML), VSCode (extensiones Python/Jupyter, terminal, linters/formatters).<br>
-<strong>Actividades:</strong> crear una EDA en Marimo con al menos una celda parametrizada; exportar a HTML; ajustar configuración básica de VSCode.</p>
-</section>
-<section id="sesión-4-quarto-y-tu-tesis" class="level2">
-<h2 class="anchored" data-anchor-id="sesión-4-quarto-y-tu-tesis">Sesión 4 — Quarto y tu tesis</h2>
-<p><strong>Temas:</strong> Quarto (book/article, <code>_quarto.yml</code>, capítulos), referencias (<code>.bib</code>, CSL), cross-referencias (figuras/tablas/ecuaciones).<br>
-<strong>Actividades:</strong> crear proyecto de tesis y render HTML/PDF; agregar capítulos iniciales y bibliografía; insertar figuras/tablas con referencias internas.</p>
+<div class="quarto-video ratio ratio-21x9"><iframe data-external="1" src="https://www.youtube.com/embed/Q_H0kLJSSCw?start=116" title="Sesión 03, git y seaborn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -836,10 +789,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/001_matplotlib.html" class="pagination-link" aria-label="Matplotlib">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Matplotlib</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./001_video.html" class="pagination-link" aria-label="Video sesión 01">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Video sesión 01</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.html" class="pagination-link" aria-label="Anatomia de una figura">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Anatomia de una figura</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

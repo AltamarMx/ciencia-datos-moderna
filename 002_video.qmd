@@ -1,0 +1,8 @@
+# Video sesión 01
+
+
+{{< video https://www.youtube.com/watch?v=Q_H0kLJSSCw
+    title="Sesión 03, git y seaborn"
+    start="116"
+    aspect-ratio="21x9" 
+>}}
