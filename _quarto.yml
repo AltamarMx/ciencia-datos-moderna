@@ -21,7 +21,7 @@ book:
     # logo: img/python.png
     right: Construido con [Quarto](https://quarto.org/).
     background: "#f8f9fa"
-  # repo-url: https://github.com/altamarmx/python-2026-1/
+  repo-url: https://github.com/altamarmx/ciencia-datos-moderna/
   chapters:
     - index.qmd 
     - 001_video.qmd 
@@ -34,6 +34,7 @@ book:
     - 002_video.qmd 
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.ipynb
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.ipynb
+    - sesiones/notebooks_003_marimo_plotly/001_EDA_plotly.md
     
 
 format:
