@@ -10,6 +10,8 @@ toc: false
 format: html
 ---
 
+![Sobrevivientes del curso en el día 4](img/grupe.png)
+
 # Presentación
 
 Taller práctico para instalar y organizar un entorno moderno  de ciencia de datos con enfasis en la reproducibilidad, interoperabilidad y colaborativo.

@@ -34,7 +34,8 @@ book:
     - 002_video.qmd 
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/002_anatomia_de_una_figura.ipynb
     - sesiones/notebooks_002_matplotlib_seaborn_plotly/003_EDA_seaborn.ipynb
-    - sesiones/notebooks_003_marimo_plotly/003_plotly_marimo
+    - 003_video.qmd 
+    - sesiones/notebooks_003_marimo_plotly/003_plotly_marimo.md
     
 
 format:

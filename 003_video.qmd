@@ -1,0 +1,8 @@
+# Video sesión 03
+
+
+{{< video https://youtu.be/XFosVyo8STM?si=XsNa-8DaTRHn6PrM
+    title="Sesión 04, marimo y quarto"
+    start="116"
+    aspect-ratio="21x9" 
+>}}

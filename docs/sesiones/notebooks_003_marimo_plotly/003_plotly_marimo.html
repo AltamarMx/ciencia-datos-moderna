@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; ¿Qué es Git? – Bases para la ciencia de datos moderna</title>
+<title>13&nbsp; 003 Plotly Marimo – Bases para la ciencia de datos moderna</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.html" rel="next">
-<link href="../../sesiones/notebooks_001_narrativa_uv_git/003_uv.html" rel="prev">
+<link href="../../003_video.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -297,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_001_narrativa_uv_git/004_git.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">¿Qué es Git?</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sesiones/notebooks_003_marimo_plotly/003_plotly_marimo.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">003 Plotly Marimo</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -341,7 +340,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sesiones/notebooks_001_narrativa_uv_git/004_git.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../sesiones/notebooks_001_narrativa_uv_git/004_git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">¿Qué es Git?</span></span></a>
   </div>
 </li>
@@ -383,7 +382,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sesiones/notebooks_003_marimo_plotly/003_plotly_marimo.html" class="sidebar-item-text sidebar-link">
+  <a href="../../sesiones/notebooks_003_marimo_plotly/003_plotly_marimo.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">003 Plotly Marimo</span></span></a>
   </div>
 </li>
@@ -392,29 +391,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
-   
-  <ul>
-  <li><a href="#por-qué-usarlo" id="toc-por-qué-usarlo" class="nav-link active" data-scroll-target="#por-qué-usarlo">¿Por qué usarlo?</a></li>
-  <li><a href="#la-importancia-de-.gitignore" id="toc-la-importancia-de-.gitignore" class="nav-link" data-scroll-target="#la-importancia-de-.gitignore">La importancia de <code>.gitignore</code></a></li>
-  <li><a href="#cuidado-con-los-archivos-grandes" id="toc-cuidado-con-los-archivos-grandes" class="nav-link" data-scroll-target="#cuidado-con-los-archivos-grandes">¡Cuidado con los archivos grandes!</a></li>
-  <li><a href="#comandos-básicos-sin-ramas" id="toc-comandos-básicos-sin-ramas" class="nav-link" data-scroll-target="#comandos-básicos-sin-ramas">Comandos básicos (sin ramas)</a></li>
-  <li><a href="#checklist-antes-de-git-commit" id="toc-checklist-antes-de-git-commit" class="nav-link" data-scroll-target="#checklist-antes-de-git-commit">Checklist antes de <code>git commit</code></a></li>
-  <li><a href="#ramas-y-flujo-de-trabajo-para-proponer-features-en-equipos-grandes" id="toc-ramas-y-flujo-de-trabajo-para-proponer-features-en-equipos-grandes" class="nav-link" data-scroll-target="#ramas-y-flujo-de-trabajo-para-proponer-features-en-equipos-grandes"><span class="header-section-number">7</span> Ramas y flujo de trabajo para proponer <em>features</em> en equipos grandes</a>
-  <ul class="collapse">
-  <li><a href="#qué-es-una-rama" id="toc-qué-es-una-rama" class="nav-link" data-scroll-target="#qué-es-una-rama">¿Qué es una rama?</a></li>
-  <li><a href="#convenciones-útiles" id="toc-convenciones-útiles" class="nav-link" data-scroll-target="#convenciones-útiles">Convenciones útiles</a></li>
-  <li><a href="#flujo-recomendado-para-proponer-una-feature" id="toc-flujo-recomendado-para-proponer-una-feature" class="nav-link" data-scroll-target="#flujo-recomendado-para-proponer-una-feature">Flujo recomendado para proponer una feature</a>
-  <ul class="collapse">
-  <li><a href="#a-si-tienes-permisos-de-escritura-en-el-repo" id="toc-a-si-tienes-permisos-de-escritura-en-el-repo" class="nav-link" data-scroll-target="#a-si-tienes-permisos-de-escritura-en-el-repo">A) Si <strong>tienes permisos</strong> de escritura en el repo</a></li>
-  <li><a href="#b-si-no-tienes-permisos-flujo-de-fork" id="toc-b-si-no-tienes-permisos-flujo-de-fork" class="nav-link" data-scroll-target="#b-si-no-tienes-permisos-flujo-de-fork">B) Si <strong>no tienes permisos</strong> (flujo de <em>fork</em>)</a></li>
-  </ul></li>
-  <li><a href="#comandos-de-apoyo-en-ramas" id="toc-comandos-de-apoyo-en-ramas" class="nav-link" data-scroll-target="#comandos-de-apoyo-en-ramas">Comandos de apoyo en ramas</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -422,7 +400,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">¿Qué es Git?</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">003 Plotly Marimo</span></h1>
 </div>
 
 
@@ -439,269 +417,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Git es un <strong>sistema de control de versiones</strong>. Guarda el historial de cambios de tus archivos, permite volver a estados anteriores y colaborar con otras personas sin pisarse el trabajo.</p>
-<ul>
-<li><strong>Repositorio</strong>: carpeta con tus archivos + una subcarpeta oculta <code>.git</code> donde vive el historial.</li>
-<li><strong>Commit</strong>: “foto” del estado de tus archivos con un mensaje explicando el cambio.</li>
-<li><strong>Remoto</strong>: copia hospedada en un servidor (por ejemplo, GitHub, GitLab).</li>
-</ul>
-<section id="por-qué-usarlo" class="level2">
-<h2 class="anchored" data-anchor-id="por-qué-usarlo">¿Por qué usarlo?</h2>
-<p><img src="./img/meme_tesis.png" class="img-fluid"></p>
-<ul>
-<li>Evitas nombres, ahora tienes versiones o <code>commits</code></li>
-<li>Recuperar versiones anteriores sin perder trabajo.</li>
-<li>Trabajar en paralelo y <strong>combinar</strong> cambios.</li>
-<li>Revisar quién cambió qué, cuándo y por qué.</li>
-<li>Automatizar publicaciones.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Pro tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Escribe <strong>commits pequeños y con mensajes claros</strong> en modo imperativo:<br>
-<code>Añade gráfico de radiación horaria</code> en lugar de <code>Añadido gráfico</code>.</p>
-</div>
-</div>
-</section>
-<section id="la-importancia-de-.gitignore" class="level2">
-<h2 class="anchored" data-anchor-id="la-importancia-de-.gitignore">La importancia de <code>.gitignore</code></h2>
-<p><code>.gitignore</code> le dice a Git qué <strong>no</strong> debe rastrear (archivos temporales, binarios, datos enormes, credenciales, etc.). Ejemplo útil para Python/Quarto/datos:</p>
-<pre class="gitignore"><code># Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-.env
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Quarto
-.quarto/
-*_cache/
-*.html
-*.pdf
-
-# SO
-.DS_Store
-Thumbs.db
-
-# Datos grandes
-data/raw/
-*.zip
-*.7z
-*.tar
-*.tar.gz
-*.csv # si son muy grandes o no se pueden generar rápido
-
-# Meteo / simulación (ajusta a tu caso)
-*.epw
-*.wea
-*.osm
-*.idf
-*.rad
-*.oct</code></pre>
-</section>
-<section id="cuidado-con-los-archivos-grandes" class="level2">
-<h2 class="anchored" data-anchor-id="cuidado-con-los-archivos-grandes">¡Cuidado con los archivos grandes!</h2>
-<p>GitHub <strong>rechaza archivos mayores a 100 MB</strong> en un push normal. Subir binarios grandes rompe el repo o te obliga a reescribir historial. Reglas prácticas:</p>
-<ul>
-<li>Mantén en el repo <strong>sólo código, texto y configs</strong>.</li>
-<li>Los datos pesados y resultados guárdalos <strong>fuera con .gitignore</strong> o usa <strong>Git LFS</strong> si tu organización lo permite.</li>
-<li>Añade patrones al <code>.gitignore</code> para prevenir accidentes (por ejemplo <code>*.epw</code>, <code>*.zip</code>, <code>data/raw/</code>).</li>
-</ul>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Advertencia
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Evita subir archivos &gt;100 MB. Si llegan a entrar, <strong>no intentes</strong> “arreglar a mano”; consulta con ChatGPT cómo reescribir historial.</p>
-</div>
-</div>
-</section>
-<section id="comandos-básicos-sin-ramas" class="level2">
-<h2 class="anchored" data-anchor-id="comandos-básicos-sin-ramas">Comandos básicos (sin ramas)</h2>
-<blockquote class="blockquote">
-<p>Flujo mínimo: inicializar → revisar → añadir → confirmar → conectar remoto → empujar.</p>
-</blockquote>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 0) Configuración inicial (una sola vez en tu máquina)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name  <span class="st">"Tu Nombre"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"tu@correo"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Crear repositorio dentro de una carpeta existente</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) Ver estado de cambios</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) Añadir archivos al "staging area"</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .                  <span class="co"># todo (mejor ser selectivo)</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) Confirmar con mensaje</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Inicializa proyecto: estructura, .gitignore y README"</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Siguientes veces:</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push                         <span class="co"># empuja cambios</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull                         <span class="co"># trae cambios del remoto</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Nota
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>En repos nuevos, la rama inicial se llama <strong><code>main</code></strong> por defecto. Aquí aún no “trabajamos con ramas”, sólo empujamos nuestro historial a <code>main</code>.</p>
-</div>
-</div>
-</section>
-<section id="checklist-antes-de-git-commit" class="level2">
-<h2 class="anchored" data-anchor-id="checklist-antes-de-git-commit">Checklist antes de <code>git commit</code></h2>
-<ul class="task-list">
-<li><label><input type="checkbox"><code>.gitignore</code> cubre temporales, binarios y datos pesados.</label></li>
-<li><label><input type="checkbox">El commit es <strong>atómico</strong> (un cambio lógico por commit).</label></li>
-<li><label><input type="checkbox">Mensaje claro en modo imperativo.</label></li>
-<li><label><input type="checkbox">No hay archivos &gt;100 MB.</label></li>
-</ul>
-<hr>
-</section>
-<section id="ramas-y-flujo-de-trabajo-para-proponer-features-en-equipos-grandes" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Ramas y flujo de trabajo para proponer <em>features</em> en equipos grandes</h1>
-<section id="qué-es-una-rama" class="level2">
-<h2 class="anchored" data-anchor-id="qué-es-una-rama">¿Qué es una rama?</h2>
-<p>Una <strong>rama</strong> es una línea de trabajo paralela al historial principal (<code>main</code>). Permite desarrollar una idea (feature, fix, experimento) sin afectar lo estable. Luego, se integra mediante <strong>Pull Request (PR)</strong>.</p>
-</section>
-<section id="convenciones-útiles" class="level2">
-<h2 class="anchored" data-anchor-id="convenciones-útiles">Convenciones útiles</h2>
-<ul>
-<li>Nombres de ramas: <code>feat/nombre-corto</code>, <code>fix/bug-descripcion</code>, <code>docs/…</code>, <code>refactor/…</code>.</li>
-<li>Mensajes de commit tipo <strong>Conventional Commits</strong>: <code>feat: agrega cálculo de DH_calido</code>; <code>fix: corrige ruta de EPW</code>.</li>
-</ul>
-</section>
-<section id="flujo-recomendado-para-proponer-una-feature" class="level2">
-<h2 class="anchored" data-anchor-id="flujo-recomendado-para-proponer-una-feature">Flujo recomendado para proponer una feature</h2>
-<section id="a-si-tienes-permisos-de-escritura-en-el-repo" class="level3">
-<h3 class="anchored" data-anchor-id="a-si-tienes-permisos-de-escritura-en-el-repo">A) Si <strong>tienes permisos</strong> de escritura en el repo</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Asegúrate de estar sincronizado con main</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) Crea una rama de trabajo</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feat/panel-diagnostico</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) Trabaja y confirma cambios en pequeños commits</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add src/panel.py</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"feat: panel básico con métricas"</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) Mantén tu rama al día (evita conflictos al final)</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch origin</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rebase origin/main   <span class="co"># o: git merge origin/main</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) Publica tu rama en el remoto</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin feat/panel-diagnostico</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Ahora abre un <strong>Pull Request</strong> hacia <code>main</code> en la plataforma (GitHub/GitLab):</p>
-<ol type="1">
-<li>Describe el <strong>qué y por qué</strong> del cambio.</li>
-<li>Adjunta capturas, benchmarks o enlaces a issues.</li>
-<li>Pide revisión a personas responsables.</li>
-<li>Atiende comentarios y <strong>empuja</strong> más commits a la misma rama.</li>
-</ol>
-<p>Cuando el PR está aprobado y las pruebas (CI) pasan, se integra. Método sugerido:</p>
-<ul>
-<li><strong>Squash &amp; Merge</strong>: junta todos tus commits en uno solo y mantiene el historial limpio.</li>
-</ul>
-<p>Limpieza tras el merge:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># borrar rama remota y local</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin <span class="at">--delete</span> feat/panel-diagnostico</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> feat/panel-diagnostico</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="b-si-no-tienes-permisos-flujo-de-fork" class="level3">
-<h3 class="anchored" data-anchor-id="b-si-no-tienes-permisos-flujo-de-fork">B) Si <strong>no tienes permisos</strong> (flujo de <em>fork</em>)</h3>
-<ol type="1">
-<li><p>Haz un <strong>fork</strong> del repo.</p></li>
-<li><p>Clona <strong>tu fork</strong>:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/tu-usuario/proyecto.git</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> proyecto</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Agrega el remoto original para sincronizarte:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add upstream https://github.com/org/proyecto.git</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch upstream</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge upstream/main   <span class="co"># o: git rebase upstream/main</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Crea tu rama y trabaja:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feat/panel-diagnostico</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ... commits ...</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin feat/panel-diagnostico</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Abre el <strong>PR desde tu fork</strong> <code>origin/feat/...</code> hacia <code>org/proyecto:main</code>.</p></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Reglas de convivencia
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>No subas datos pesados ni secretos (usa <code>.gitignore</code> y variables de entorno).</li>
-<li>Sigue las guías de estilo del repo (linters, formateo, tests).</li>
-<li>Un PR debe ser <strong>pequeño y revisable</strong>. Si crece, divídelo.</li>
-<li>Mantén tu rama actualizada con <code>main</code> con frecuencia para minimizar conflictos.</li>
-</ul>
-</div>
-</div>
-</section>
-</section>
-<section id="comandos-de-apoyo-en-ramas" class="level2">
-<h2 class="anchored" data-anchor-id="comandos-de-apoyo-en-ramas">Comandos de apoyo en ramas</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear y cambiar a una rama nueva</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feat/nueva-funcion</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver ramas</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch                <span class="co"># locales</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-r</span>             <span class="co"># remotas</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-a</span>             <span class="co"># todas</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Cambiar de rama</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Traer cambios de main a tu rama (elige uno)</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge origin/main</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># o bien, reescribir tu rama encima de main (historial más lineal)</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rebase origin/main</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolver conflictos: edita archivos marcados y luego</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="op">&lt;</span>archivo_resuelto<span class="op">&gt;</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> rebase <span class="at">--continue</span>     <span class="co"># si estabas en rebase</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co"># o git commit             # si estabas en merge</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Publicar la rama de trabajo</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin feat/nueva-funcion</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python marimo code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> marimo <span class="im">as</span> mo</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python marimo code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="st">"data/ClimaLab_2023-10-27_2025-04-30.parquet"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>tmx <span class="op">=</span> pd.read_parquet(f).reset_index()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python marimo code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>columnas <span class="op">=</span> [columna <span class="cf">for</span> columna <span class="kw">in</span> tmx.columns <span class="cf">if</span> columna<span class="op">!=</span><span class="st">"date"</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Tu lista de opciones (puede venir de cualquier lado)</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>selector <span class="op">=</span> mo.ui.dropdown(</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    options<span class="op">=</span>columnas,       <span class="co"># la lista</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    value<span class="op">=</span><span class="st">"tdb"</span>,      <span class="co"># valor inicial (opcional)</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    label<span class="op">=</span><span class="st">"Elige una variable"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    searchable<span class="op">=</span><span class="va">True</span>         <span class="co"># añade caja de búsqueda para listas largas</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>selector  <span class="co"># muéstralo en la celda</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python marimo code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> px.scatter(tmx,tmx.date,selector.value )  </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python marimo code-with-copy"><code class="sourceCode python"></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1118,14 +857,11 @@ Reglas de convivencia
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../sesiones/notebooks_001_narrativa_uv_git/003_uv.html" class="pagination-link" aria-label="¿Por qué entornos virtuales?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">¿Por qué entornos virtuales?</span></span>
+      <a href="../../003_video.html" class="pagination-link" aria-label="Video sesión 03">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Video sesión 03</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../sesiones/notebooks_002_matplotlib_seaborn_plotly/000_Conoce_los_datos.html" class="pagination-link" aria-label="Datos de una estación meteorológica">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Datos de una estación meteorológica</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

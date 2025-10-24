@@ -320,13 +320,13 @@
     ]
   },
   {
-    "objectID": "sesiones/notebooks_003_marimo_plotly/001_EDA_plotly.html",
-    "href": "sesiones/notebooks_003_marimo_plotly/001_EDA_plotly.html",
-    "title": "12  001 Eda Plotly",
+    "objectID": "sesiones/notebooks_003_marimo_plotly/003_plotly_marimo.html",
+    "href": "sesiones/notebooks_003_marimo_plotly/003_plotly_marimo.html",
+    "title": "13  003 Plotly Marimo",
     "section": "",
-    "text": "import marimo as mo\nimport pandas as pd\nimport plotly.express as px\nf = 'data/ClimaLab_2023-10-27_2025-04-30.parquet'\ntmx = pd.read_parquet(f)\ntmx_date = tmx.reset_index().copy()\ntmx\npx.line(\n    data_frame=tmx_date,\n    x='date',\n    y='dhi'\n)\ntmx2024 = tmx[tmx.index.year == 2024].copy()\ntmx2024_horario = tmx2024.tdb.resample(\"h\").max().copy()\ntdb_heatmap = tmx2024_horario.groupby(\n            by=[\n                tmx2024_horario.index.month,\n                tmx2024_horario.index.hour]\n            ).mean().unstack().T\ntdb_heatmap\nfig = px.imshow(tdb_heatmap, color_continuous_scale='RdBu_r', origin='lower')\nfig.show()\nfigs = px.line(data_frame=tmx_date, x='date', y='tdb', title='Time Series with Rangeslider')\n\nfigs.update_xaxes(rangeslider_visible=True)\nfigs.show()\ntmx_date",
+    "text": "import marimo as mo\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport plotly.express as px\nf = \"data/ClimaLab_2023-10-27_2025-04-30.parquet\"\ntmx = pd.read_parquet(f).reset_index()\ncolumnas = [columna for columna in tmx.columns if columna!=\"date\"]\n\n\n# Tu lista de opciones (puede venir de cualquier lado)\n\nselector = mo.ui.dropdown(\n    options=columnas,       # la lista\n    value=\"tdb\",      # valor inicial (opcional)\n    label=\"Elige una variable\",\n    searchable=True         # añade caja de búsqueda para listas largas\n)\n\nselector  # muéstralo en la celda\nfig = px.scatter(tmx,tmx.date,selector.value )  \nfig.show()",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>001 Eda Plotly</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>003 Plotly Marimo</span>"
     ]
   }
 ]
